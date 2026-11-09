@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p class="etiqueta">
+        HISTORIAL DEL PACIENTE
+    </p>
+    <h1>
+        {{ paciente.nombre_completo }}
+    </h1>
+    <p>
+        {{ paciente.rut }}
+        ·
+        {{ paciente.edad }}
+        años ·
+        {{ paciente.sexo }}
+        ·
+        {{ paciente.prevision }}
+    </p>
+    <p>
+        {{ paciente.domicilio_comuna }}
+    </p>
+    <h2>
+        Consultas
+    </h2>
+    {% for c in pagina %}
+        <section class="card card-body p-4 my-4">
+            <h3>
+                {{ c.fecha|default:'Sin fecha de consulta' }}
+                ·
+                {{ c.get_clasificacion_display }}
+            </h3>
+            <p>
+                {{ c.edad }}
+                años ·
+                {{ c.peso }}
+                kg ·
+                {{ c.prevision }}
+            </p>
+            <dl>
+                <dt>
+                    Enfermedades declaradas en la planilla
+                </dt>
+                <dd>
+                    {{ c.enfermedades_declaradas|default:"Sin información" }}
+                </dd>
+                <dt>
+                    Últimas consultas
+                </dt>
+                <dd>
+                    {{ c.ultimas_consultas|default:"Sin información" }}
+                </dd>
+                <dt>
+                    Destino
+                </dt>
+                <dd>
+                    {{ c.destino|default:"Sin información" }}
+                </dd>
+                <dt>
+                    Condición indicada en la planilla
+                </dt>
+                <dd>
+                    {{ c.condicion_declarada|default:"Sin información" }}
+                </dd>
+                <dt>
+                    Antecedentes médicos
+                </dt>
+                <dd>
+                    {{ c.antecedentes|default:'Sin información' }}
+                </dd>
+                <dt>
+                    Signos vitales
+                </dt>
+                <dd>
+                    {{ c.signos_vitales|default:'Sin información' }}
+                </dd>
+                <dt>
+                    Enfermedades detectadas
+                </dt>
+                <dd>
+                    {{ c.enfermedades|join:', '|default:'Sin coincidencias' }}
+                </dd>
+            </dl>
+            <p>
+                Origen:
+                <a href="{% url 'importaciones:detalle' c.importacion_id %}">
+                    importación
+                    {{ c.importacion_id }}
+                </a>
+                , fila
+                {{ c.fila }}
+                .
+            </p>
+            {% if c.clasificacion == 'ENO' %}
+                <p>
+                    Notificación registrada:
+                    {{ c.eno_notificado|yesno:'Sí,No' }}
+                </p>
+            {% elif c.clasificacion == 'GES_AUGE' %}
+                <p>
+                    Seguimiento vigente:
+                    {{ c.ges_vigente|yesno:'Sí,No' }}
+                </p>
+            {% endif %}
+            {% if user.is_staff %}
+                <a href="{% url 'admin:pacientes_consulta_change' c.pk %}">
+                    Actualizar estado de seguimiento
+                </a>
+            {% endif %}
+        </section>
+    {% empty %}
+        <p>
+            Sin consultas.
+        </p>
+    {% endfor %}
+    {% include 'paginacion.html' %}
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p class="etiqueta">
+        REGISTRO MAESTRO
+    </p>
+    <h1>
+        Pacientes
+    </h1>
+    <form method="get">
+        <label class="form-label" for="q">
+            Buscar por nombre o RUT
+        </label>
+        <input class="form-control" id="q" name="q" value="{{ busqueda }}">
+        <button class="btn btn-primary" type="submit">
+            Buscar
+        </button>
+    </form>
+    <section class="card card-body p-4 my-4">
+        <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th>
+                            RUT
+                        </th>
+                        <th>
+                            Nombre
+                        </th>
+                        <th>
+                            Edad
+                        </th>
+                        <th>
+                            Sexo
+                        </th>
+                        <th>
+                            Previsión
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in pagina %}
+                        <tr>
+                            <td>
+                                <a href="{% url 'pacientes:detalle' p.pk %}">
+                                    {{ p.rut }}
+                                </a>
+                            </td>
+                            <td>
+                                {{ p.nombre_completo }}
+                            </td>
+                            <td>
+                                {{ p.edad }}
+                            </td>
+                            <td>
+                                {{ p.sexo }}
+                            </td>
+                            <td>
+                                {{ p.prevision }}
+                            </td>
+                        </tr>
+                    {% empty %}
+                        <tr>
+                            <td colspan="5">
+                                No hay pacientes para mostrar.
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% include 'paginacion.html' %}
+    </section>
+{% endblock %}

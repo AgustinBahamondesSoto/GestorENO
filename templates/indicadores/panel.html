@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block content %}
+    <p class="etiqueta">
+        RESUMEN DE LA POBLACIÓN
+    </p>
+    <h1>
+        Indicadores clínicos
+    </h1>
+    <p>
+        Pacientes consolidados por RUT y consultas conservadas en su historial.
+    </p>
+    {% if not hay_reglas %}
+        <aside class="alert alert-warning my-4" role="status">
+            No hay reglas clínicas activas. Un administrador debe configurar y validar el diccionario antes de interpretar la clasificación.
+        </aside>
+    {% endif %}
+    <section class="card card-body p-4 my-4">
+        <h2>
+            Filtrar población
+        </h2>
+        <form method="get" class="row g-3 align-items-end">
+            {% include "formulario.html" with horizontal=True %}
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">
+                    Aplicar filtros
+                </button>
+                <a href="{% url 'indicadores:panel' %}">
+                    Limpiar
+                </a>
+            </div>
+        </form>
+    </section>
+    {% if datos %}
+        <div class="row g-4 mb-4">
+            <div class="col-md-6">
+                <section class="card card-body p-4 h-100">
+                    <span>
+                        Pacientes únicos
+                    </span>
+                    <strong class="kpi">
+                        {{ datos.total }}
+                    </strong>
+                </section>
+            </div>
+            <div class="col-md-6">
+                <section class="card card-body p-4 h-100">
+                    <h2>
+                        Reportes internos
+                    </h2>
+                    <p>
+                        Incluye ENO pendientes y GES vigentes.
+                    </p>
+                    <a class="btn btn-primary" href="{% url 'reportes:exportar' %}?{{ consulta }}">
+                        Descargar Excel
+                    </a>
+                </section>
+            </div>
+        </div>
+        <p>
+            Los porcentajes usan como denominador la población filtrada. Se revisa todo su historial; una persona puede aparecer en varias categorías o enfermedades.
+        </p>
+        <div class="row g-4">
+            {% include 'indicadores/tabla.html' with titulo='Condición GES / ENO' filas=datos.categorias %}
+            {% include 'indicadores/tabla.html' with titulo='Distribución por edad' filas=datos.edades %}
+            {% include 'indicadores/tabla.html' with titulo='Distribución por sexo' filas=datos.sexos %}
+            {% include 'indicadores/tabla.html' with titulo='Distribución por previsión' filas=datos.previsiones %}
+            {% include 'indicadores/tabla.html' with titulo='Prevalencia por enfermedad' filas=datos.enfermedades %}
+        </div>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+    <section class="card card-body p-4 acceso">
+        <p class="etiqueta">
+            ACCESO AL SISTEMA
+        </p>
+        <h1>
+            Iniciar sesión
+        </h1>
+        <p>
+            Ingresa con tu cuenta del establecimiento.
+        </p>
+        <form method="post">
+            {% csrf_token %}
+            {% include "formulario.html" %}
+            {% if next %}
+                <input type="hidden" name="next" value="{{ next }}">
+            {% endif %}
+            <button class="btn btn-primary" type="submit">
+                Entrar
+            </button>
+        </form>
+    </section>
+{% endblock %}

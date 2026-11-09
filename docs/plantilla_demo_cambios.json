@@ -1,0 +1,2036 @@
+[
+  {
+    "fila_original": 5,
+    "columna": "RUT",
+    "antes": "24.285.201-K",
+    "despues": "24285201-K"
+  },
+  {
+    "fila_original": 5,
+    "columna": "Últimas consultas",
+    "antes": "13-08-2026 - Teleconsulta control crónico",
+    "despues": "13-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 5,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por influenza humana según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Influenza humana. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 5,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 110/71 mmHg | FC 74 lpm | FR 18 rpm | Temp 36.9°C | SatO2 98% (12-08-2026)",
+    "despues": "PA 110/71 mmHg | FC 74 lpm | FR 18 rpm | Temp 36.9°C | SatO2 98% (13-08-2026)"
+  },
+  {
+    "fila_original": 6,
+    "columna": "Nombre",
+    "antes": "Diego",
+    "despues": "Daniela"
+  },
+  {
+    "fila_original": 6,
+    "columna": "RUT",
+    "antes": "10.188.470-8",
+    "despues": "10188470-8"
+  },
+  {
+    "fila_original": 6,
+    "columna": "Sexo",
+    "antes": "Masculino",
+    "despues": "Femenino"
+  },
+  {
+    "fila_original": 6,
+    "columna": "Últimas consultas",
+    "antes": "12-07-2026 - Control programa cardiovascular",
+    "despues": "12-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 6,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por cáncer cervicouterino. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Santiago.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Cáncer cervicouterino. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 6,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 161/99 mmHg | FC 76 lpm | FR 20 rpm | Temp 36.2°C | SatO2 97% (21-07-2026)",
+    "despues": "PA 161/99 mmHg | FC 76 lpm | FR 20 rpm | Temp 36.2°C | SatO2 97% (12-07-2026)"
+  },
+  {
+    "fila_original": 7,
+    "columna": "RUT",
+    "antes": "18.421.212-9",
+    "despues": "18421212-9"
+  },
+  {
+    "fila_original": 7,
+    "columna": "Últimas consultas",
+    "antes": "01-06-2026 - Control post-hospitalización",
+    "despues": "01-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 7,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Castro.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 7,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 119/68 mmHg | FC 84 lpm | FR 16 rpm | Temp 36.7°C | SatO2 96% (14-08-2026)",
+    "despues": "PA 119/68 mmHg | FC 84 lpm | FR 16 rpm | Temp 36.7°C | SatO2 96% (01-06-2026)"
+  },
+  {
+    "fila_original": 8,
+    "columna": "RUT",
+    "antes": "7.077.105-5",
+    "despues": "7077105-5"
+  },
+  {
+    "fila_original": 8,
+    "columna": "Últimas consultas",
+    "antes": "26-06-2026 - Consulta salud mental (COSAM)",
+    "despues": "26-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 8,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por enfermedad de crohn. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Arica.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Enfermedad de Crohn. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 8,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 119/86 mmHg | FC 80 lpm | FR 20 rpm | Temp 37.1°C | SatO2 94% (10-08-2026)",
+    "despues": "PA 119/86 mmHg | FC 80 lpm | FR 20 rpm | Temp 37.1°C | SatO2 94% (26-06-2026)"
+  },
+  {
+    "fila_original": 9,
+    "columna": "RUT",
+    "antes": "18.146.585-9",
+    "despues": "18146585-9"
+  },
+  {
+    "fila_original": 9,
+    "columna": "Últimas consultas",
+    "antes": "03-06-2026 - Control materno / matronería",
+    "despues": "03-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 9,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por cáncer gástrico. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en San Carlos.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Cáncer gástrico. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 9,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 167/98 mmHg | FC 76 lpm | FR 19 rpm | Temp 36.9°C | SatO2 98% (30-07-2026)",
+    "despues": "PA 167/98 mmHg | FC 76 lpm | FR 19 rpm | Temp 36.9°C | SatO2 98% (03-06-2026)"
+  },
+  {
+    "fila_original": 10,
+    "columna": "RUT",
+    "antes": "9.843.718-5",
+    "despues": "9843718-5"
+  },
+  {
+    "fila_original": 10,
+    "columna": "Peso (kg)",
+    "antes": "57.1",
+    "despues": 40.2
+  },
+  {
+    "fila_original": 10,
+    "columna": "Últimas consultas",
+    "antes": "01-07-2026 - Teleconsulta control crónico",
+    "despues": "01-07-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 10,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por epilepsia no refractaria, desde 1 año y menores de 15 años. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Maipú.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Epilepsia no refractaria, desde 1 año y menores de 15 años. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 10,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 134/81 mmHg | FC 76 lpm | FR 18 rpm | Temp 37.2°C | SatO2 94% (12-07-2026)",
+    "despues": "PA 134/81 mmHg | FC 76 lpm | FR 18 rpm | Temp 37.2°C | SatO2 94% (01-07-2026)"
+  },
+  {
+    "fila_original": 11,
+    "columna": "RUT",
+    "antes": "11.420.686-5",
+    "despues": "11420686-5"
+  },
+  {
+    "fila_original": 11,
+    "columna": "Últimas consultas",
+    "antes": "22-07-2026 - Consulta odontológica",
+    "despues": "22-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 11,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Temuco.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Dislipidemia. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 11,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 124/85 mmHg | FC 92 lpm | FR 18 rpm | Temp 36.4°C | SatO2 96% (07-07-2026)",
+    "despues": "PA 124/85 mmHg | FC 92 lpm | FR 18 rpm | Temp 36.4°C | SatO2 96% (22-07-2026)"
+  },
+  {
+    "fila_original": 12,
+    "columna": "RUT",
+    "antes": "20.198.153-0",
+    "despues": "20198153-0"
+  },
+  {
+    "fila_original": 12,
+    "columna": "Peso (kg)",
+    "antes": "12.0",
+    "despues": 16.8
+  },
+  {
+    "fila_original": 12,
+    "columna": "Últimas consultas",
+    "antes": "14-08-2026 - Control programa cardiovascular",
+    "despues": "14-08-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 12,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Independencia.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 12,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 113/69 mmHg | FC 90 lpm | FR 18 rpm | Temp 36.3°C | SatO2 98% (30-06-2026)",
+    "despues": "PA 113/69 mmHg | FC 90 lpm | FR 18 rpm | Temp 36.3°C | SatO2 98% (14-08-2026)"
+  },
+  {
+    "fila_original": 13,
+    "columna": "RUT",
+    "antes": "13.389.269-9",
+    "despues": "13389269-9"
+  },
+  {
+    "fila_original": 13,
+    "columna": "Últimas consultas",
+    "antes": "08-07-2026 - Control materno / matronería",
+    "despues": "08-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 13,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Quilpué.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Gastritis crónica. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 13,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 119/67 mmHg | FC 81 lpm | FR 14 rpm | Temp 36.9°C | SatO2 95% (18-07-2026)",
+    "despues": "PA 119/67 mmHg | FC 81 lpm | FR 14 rpm | Temp 36.9°C | SatO2 95% (08-07-2026)"
+  },
+  {
+    "fila_original": 14,
+    "columna": "RUT",
+    "antes": "20.463.677-K",
+    "despues": "20463677-K"
+  },
+  {
+    "fila_original": 14,
+    "columna": "Peso (kg)",
+    "antes": "52.0",
+    "despues": 29.8
+  },
+  {
+    "fila_original": 14,
+    "columna": "Últimas consultas",
+    "antes": "20-07-2026 - Control materno / matronería",
+    "despues": "20-07-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 14,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por cáncer gástrico. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Concepción.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Cáncer gástrico. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 14,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 135/72 mmHg | FC 90 lpm | FR 20 rpm | Temp 36.6°C | SatO2 94% (18-08-2026)",
+    "despues": "PA 135/72 mmHg | FC 90 lpm | FR 20 rpm | Temp 36.6°C | SatO2 94% (20-07-2026)"
+  },
+  {
+    "fila_original": 15,
+    "columna": "RUT",
+    "antes": "24.465.853-9",
+    "despues": "24465853-9"
+  },
+  {
+    "fila_original": 15,
+    "columna": "Últimas consultas",
+    "antes": "11-08-2026 - Control post-hospitalización",
+    "despues": "11-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 15,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por trastorno bipolar. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Maipú.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Trastorno bipolar. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 15,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 163/92 mmHg | FC 77 lpm | FR 17 rpm | Temp 36.4°C | SatO2 94% (27-07-2026)",
+    "despues": "PA 163/92 mmHg | FC 77 lpm | FR 17 rpm | Temp 36.4°C | SatO2 94% (11-08-2026)"
+  },
+  {
+    "fila_original": 16,
+    "columna": "RUT",
+    "antes": "24.648.490-2",
+    "despues": "24648490-2"
+  },
+  {
+    "fila_original": 16,
+    "columna": "Peso (kg)",
+    "antes": "56.5",
+    "despues": 14.2
+  },
+  {
+    "fila_original": 16,
+    "columna": "Últimas consultas",
+    "antes": "04-07-2026 - Control crónico APS (CESFAM)",
+    "despues": "04-07-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 16,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por hipertensión arterial primaria o esencial. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en San Bernardo.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Hipertensión arterial primaria o esencial. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 16,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 121/79 mmHg | FC 78 lpm | FR 17 rpm | Temp 37.0°C | SatO2 99% (05-07-2026)",
+    "despues": "PA 121/79 mmHg | FC 78 lpm | FR 17 rpm | Temp 37.0°C | SatO2 99% (04-07-2026)"
+  },
+  {
+    "fila_original": 17,
+    "columna": "RUT",
+    "antes": "8.280.388-2",
+    "despues": "8280388-2"
+  },
+  {
+    "fila_original": 17,
+    "columna": "Últimas consultas",
+    "antes": "18-08-2026 - Teleconsulta control crónico",
+    "despues": "18-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 17,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por brucelosis según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Brucelosis. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 17,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 115/66 mmHg | FC 92 lpm | FR 14 rpm | Temp 37.2°C | SatO2 94% (17-07-2026)",
+    "despues": "PA 115/66 mmHg | FC 92 lpm | FR 14 rpm | Temp 37.2°C | SatO2 94% (18-08-2026)"
+  },
+  {
+    "fila_original": 18,
+    "columna": "RUT",
+    "antes": "16.066.231-K",
+    "despues": "16066231-K"
+  },
+  {
+    "fila_original": 18,
+    "columna": "Últimas consultas",
+    "antes": "11-06-2026 - Teleconsulta control crónico",
+    "despues": "11-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 18,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por sarampión según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sarampión. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 18,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 118/86 mmHg | FC 80 lpm | FR 15 rpm | Temp 36.4°C | SatO2 95% (13-07-2026)",
+    "despues": "PA 118/86 mmHg | FC 80 lpm | FR 15 rpm | Temp 36.4°C | SatO2 95% (11-06-2026)"
+  },
+  {
+    "fila_original": 19,
+    "columna": "RUT",
+    "antes": "16.150.790-3",
+    "despues": "16150790-3"
+  },
+  {
+    "fila_original": 19,
+    "columna": "Peso (kg)",
+    "antes": "52.2",
+    "despues": 35.0
+  },
+  {
+    "fila_original": 19,
+    "columna": "Últimas consultas",
+    "antes": "21-06-2026 - Consulta de urgencia",
+    "despues": "21-06-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 19,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por artritis reumatoidea. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Santiago.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Artritis reumatoidea. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 19,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 120/76 mmHg | FC 78 lpm | FR 15 rpm | Temp 36.7°C | SatO2 98% (10-07-2026)",
+    "despues": "PA 120/76 mmHg | FC 78 lpm | FR 15 rpm | Temp 36.7°C | SatO2 98% (21-06-2026)"
+  },
+  {
+    "fila_original": 20,
+    "columna": "RUT",
+    "antes": "20.212.844-0",
+    "despues": "20212844-0"
+  },
+  {
+    "fila_original": 20,
+    "columna": "Últimas consultas",
+    "antes": "15-06-2026 - Consulta morbilidad general",
+    "despues": "15-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 20,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por politraumatizado grave. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Recoleta.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Politraumatizado grave. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 20,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 160/93 mmHg | FC 76 lpm | FR 18 rpm | Temp 36.7°C | SatO2 94% (19-08-2026)",
+    "despues": "PA 160/93 mmHg | FC 76 lpm | FR 18 rpm | Temp 36.7°C | SatO2 94% (15-06-2026)"
+  },
+  {
+    "fila_original": 21,
+    "columna": "RUT",
+    "antes": "20.421.249-K",
+    "despues": "20421249-K"
+  },
+  {
+    "fila_original": 21,
+    "columna": "Últimas consultas",
+    "antes": "01-07-2026 - Consulta odontológica",
+    "despues": "01-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 21,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por cáncer de mama. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Punta Arenas.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Cáncer de mama. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 21,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 114/82 mmHg | FC 62 lpm | FR 20 rpm | Temp 36.6°C | SatO2 98% (15-08-2026)",
+    "despues": "PA 114/82 mmHg | FC 62 lpm | FR 20 rpm | Temp 36.6°C | SatO2 98% (01-07-2026)"
+  },
+  {
+    "fila_original": 22,
+    "columna": "RUT",
+    "antes": "17.146.294-0",
+    "despues": "17146294-0"
+  },
+  {
+    "fila_original": 22,
+    "columna": "Peso (kg)",
+    "antes": "53.9",
+    "despues": 24.6
+  },
+  {
+    "fila_original": 22,
+    "columna": "Últimas consultas",
+    "antes": "14-06-2026 - Consulta salud mental (COSAM)",
+    "despues": "14-06-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 22,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Calama.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 22,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 120/70 mmHg | FC 71 lpm | FR 17 rpm | Temp 36.1°C | SatO2 99% (26-06-2026)",
+    "despues": "PA 120/70 mmHg | FC 71 lpm | FR 17 rpm | Temp 36.1°C | SatO2 99% (14-06-2026)"
+  },
+  {
+    "fila_original": 23,
+    "columna": "RUT",
+    "antes": "8.329.373-K",
+    "despues": "8329373-K"
+  },
+  {
+    "fila_original": 23,
+    "columna": "Últimas consultas",
+    "antes": "27-07-2026 - Control post-hospitalización",
+    "despues": "27-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 23,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Los Ángeles.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Anemia ferropénica. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 23,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 119/72 mmHg | FC 61 lpm | FR 19 rpm | Temp 36.4°C | SatO2 96% (07-08-2026)",
+    "despues": "PA 119/72 mmHg | FC 61 lpm | FR 19 rpm | Temp 36.4°C | SatO2 96% (27-07-2026)"
+  },
+  {
+    "fila_original": 24,
+    "columna": "RUT",
+    "antes": "18.925.013-4",
+    "despues": "18925013-4"
+  },
+  {
+    "fila_original": 24,
+    "columna": "Últimas consultas",
+    "antes": "02-08-2026 - Teleconsulta control crónico",
+    "despues": "02-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 24,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Linares.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Dislipidemia. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 24,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 132/76 mmHg | FC 80 lpm | FR 17 rpm | Temp 36.9°C | SatO2 98% (17-08-2026)",
+    "despues": "PA 132/76 mmHg | FC 80 lpm | FR 17 rpm | Temp 36.9°C | SatO2 98% (02-08-2026)"
+  },
+  {
+    "fila_original": 25,
+    "columna": "RUT",
+    "antes": "16.077.143-7",
+    "despues": "16077143-7"
+  },
+  {
+    "fila_original": 25,
+    "columna": "Últimas consultas",
+    "antes": "31-05-2026 - Control post-hospitalización",
+    "despues": "31-05-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 25,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por tuberculosis pulmonar según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Tuberculosis pulmonar. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 25,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 126/84 mmHg | FC 80 lpm | FR 19 rpm | Temp 37.2°C | SatO2 99% (28-06-2026)",
+    "despues": "PA 126/84 mmHg | FC 80 lpm | FR 19 rpm | Temp 37.2°C | SatO2 99% (31-05-2026)"
+  },
+  {
+    "fila_original": 26,
+    "columna": "RUT",
+    "antes": "16.812.889-4",
+    "despues": "16812889-4"
+  },
+  {
+    "fila_original": 26,
+    "columna": "Últimas consultas",
+    "antes": "30-05-2026 - Consulta morbilidad general",
+    "despues": "30-05-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 26,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente GES por epoc (enfermedad pulmonar obstructiva crónica), cursa además con sífilis notificada a la autoridad sanitaria (ENO). Doble seguimiento clínico y epidemiológico.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: EPOC (Enfermedad Pulmonar Obstructiva Crónica); Sífilis. Condición indicada para pruebas: GES/AUGE y ENO."
+  },
+  {
+    "fila_original": 26,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 105/74 mmHg | FC 78 lpm | FR 15 rpm | Temp 36.7°C | SatO2 98% (17-07-2026)",
+    "despues": "PA 105/74 mmHg | FC 78 lpm | FR 15 rpm | Temp 36.7°C | SatO2 98% (30-05-2026)"
+  },
+  {
+    "fila_original": 27,
+    "columna": "RUT",
+    "antes": "7.550.675-9",
+    "despues": "7550675-9"
+  },
+  {
+    "fila_original": 27,
+    "columna": "Últimas consultas",
+    "antes": "01-06-2026 - Teleconsulta control crónico",
+    "despues": "01-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 27,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por hiperplasia benigna de próstata. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Talca.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Hiperplasia benigna de próstata. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 27,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 120/86 mmHg | FC 79 lpm | FR 15 rpm | Temp 37.1°C | SatO2 95% (23-08-2026)",
+    "despues": "PA 120/86 mmHg | FC 79 lpm | FR 15 rpm | Temp 37.1°C | SatO2 95% (01-06-2026)"
+  },
+  {
+    "fila_original": 28,
+    "columna": "RUT",
+    "antes": "21.587.707-8",
+    "despues": "21587707-8"
+  },
+  {
+    "fila_original": 28,
+    "columna": "Peso (kg)",
+    "antes": "88.9",
+    "despues": 35.0
+  },
+  {
+    "fila_original": 28,
+    "columna": "Últimas consultas",
+    "antes": "22-06-2026 - Consulta salud mental (COSAM)",
+    "despues": "22-06-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 28,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por retinopatía diabética. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Rancagua.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Retinopatía diabética. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 28,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 111/78 mmHg | FC 74 lpm | FR 15 rpm | Temp 37.1°C | SatO2 99% (22-07-2026)",
+    "despues": "PA 111/78 mmHg | FC 74 lpm | FR 15 rpm | Temp 37.1°C | SatO2 99% (22-06-2026)"
+  },
+  {
+    "fila_original": 29,
+    "columna": "RUT",
+    "antes": "21.927.431-9",
+    "despues": "21927431-9"
+  },
+  {
+    "fila_original": 29,
+    "columna": "Últimas consultas",
+    "antes": "09-06-2026 - Control especialidad (policlínico)",
+    "despues": "09-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 29,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Rancagua.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 29,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 137/78 mmHg | FC 95 lpm | FR 17 rpm | Temp 37.3°C | SatO2 99% (30-06-2026)",
+    "despues": "PA 137/78 mmHg | FC 95 lpm | FR 17 rpm | Temp 37.3°C | SatO2 99% (09-06-2026)"
+  },
+  {
+    "fila_original": 30,
+    "columna": "RUT",
+    "antes": "13.179.067-8",
+    "despues": "13179067-8"
+  },
+  {
+    "fila_original": 30,
+    "columna": "Últimas consultas",
+    "antes": "15-08-2026 - Consulta de urgencia",
+    "despues": "15-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 30,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por neumonía adquirida en la comunidad, adulto mayor de 65 años. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Los Ángeles.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Neumonía adquirida en la comunidad, adulto mayor de 65 años. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 31,
+    "columna": "RUT",
+    "antes": "20.060.021-5",
+    "despues": "20060021-5"
+  },
+  {
+    "fila_original": 31,
+    "columna": "Últimas consultas",
+    "antes": "11-06-2026 - Control crónico APS (CESFAM)",
+    "despues": "11-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 31,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Rancagua.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 31,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 129/80 mmHg | FC 60 lpm | FR 16 rpm | Temp 36.5°C | SatO2 97% (01-07-2026)",
+    "despues": "PA 129/80 mmHg | FC 60 lpm | FR 16 rpm | Temp 36.5°C | SatO2 97% (11-06-2026)"
+  },
+  {
+    "fila_original": 32,
+    "columna": "RUT",
+    "antes": "20.381.858-0",
+    "despues": "20381858-0"
+  },
+  {
+    "fila_original": 32,
+    "columna": "Últimas consultas",
+    "antes": "03-08-2026 - Control materno / matronería",
+    "despues": "03-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 32,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Rengo.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 32,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 106/77 mmHg | FC 97 lpm | FR 18 rpm | Temp 37.0°C | SatO2 94% (14-07-2026)",
+    "despues": "PA 106/77 mmHg | FC 97 lpm | FR 18 rpm | Temp 37.0°C | SatO2 94% (03-08-2026)"
+  },
+  {
+    "fila_original": 33,
+    "columna": "RUT",
+    "antes": "13.523.647-0",
+    "despues": "13523647-0"
+  },
+  {
+    "fila_original": 33,
+    "columna": "Últimas consultas",
+    "antes": "07-07-2026 - Consulta de urgencia",
+    "despues": "07-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 33,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Iquique.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 33,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 121/67 mmHg | FC 90 lpm | FR 14 rpm | Temp 37.1°C | SatO2 94% (02-08-2026)",
+    "despues": "PA 121/67 mmHg | FC 90 lpm | FR 14 rpm | Temp 37.1°C | SatO2 94% (07-07-2026)"
+  },
+  {
+    "fila_original": 34,
+    "columna": "RUT",
+    "antes": "11.495.068-8",
+    "despues": "11495068-8"
+  },
+  {
+    "fila_original": 34,
+    "columna": "Peso (kg)",
+    "antes": "21.8",
+    "despues": 19.4
+  },
+  {
+    "fila_original": 34,
+    "columna": "Últimas consultas",
+    "antes": "25-06-2026 - Control programa cardiovascular",
+    "despues": "25-06-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 34,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente GES por insuficiencia renal crónica terminal, cursa además con enfermedad de chagas notificada a la autoridad sanitaria (ENO). Doble seguimiento clínico y epidemiológico.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Insuficiencia renal crónica terminal; Enfermedad de Chagas. Condición indicada para pruebas: GES/AUGE y ENO."
+  },
+  {
+    "fila_original": 34,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 128/70 mmHg | FC 98 lpm | FR 18 rpm | Temp 37.4°C | SatO2 99% (17-08-2026)",
+    "despues": "PA 128/70 mmHg | FC 98 lpm | FR 18 rpm | Temp 37.4°C | SatO2 99% (25-06-2026)"
+  },
+  {
+    "fila_original": 35,
+    "columna": "RUT",
+    "antes": "24.989.545-8",
+    "despues": "24989545-8"
+  },
+  {
+    "fila_original": 35,
+    "columna": "Últimas consultas",
+    "antes": "15-08-2026 - Teleconsulta control crónico",
+    "despues": "15-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 35,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en San Carlos.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 35,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 111/87 mmHg | FC 79 lpm | FR 20 rpm | Temp 37.0°C | SatO2 94% (05-07-2026)",
+    "despues": "PA 111/87 mmHg | FC 79 lpm | FR 20 rpm | Temp 37.0°C | SatO2 94% (15-08-2026)"
+  },
+  {
+    "fila_original": 36,
+    "columna": "RUT",
+    "antes": "15.062.461-4",
+    "despues": "15062461-4"
+  },
+  {
+    "fila_original": 36,
+    "columna": "Últimas consultas",
+    "antes": "23-06-2026 - Control programa cardiovascular",
+    "despues": "23-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 36,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por varicela según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Varicela. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 36,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 134/87 mmHg | FC 69 lpm | FR 17 rpm | Temp 36.3°C | SatO2 98% (14-07-2026)",
+    "despues": "PA 134/87 mmHg | FC 69 lpm | FR 17 rpm | Temp 36.3°C | SatO2 98% (23-06-2026)"
+  },
+  {
+    "fila_original": 37,
+    "columna": "RUT",
+    "antes": "13.117.561-2",
+    "despues": "13117561-2"
+  },
+  {
+    "fila_original": 37,
+    "columna": "Últimas consultas",
+    "antes": "20-07-2026 - Control materno / matronería",
+    "despues": "20-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 37,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por hemofilia. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Puerto Montt.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Hemofilia. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 37,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 129/75 mmHg | FC 61 lpm | FR 17 rpm | Temp 37.2°C | SatO2 95% (24-07-2026)",
+    "despues": "PA 129/75 mmHg | FC 61 lpm | FR 17 rpm | Temp 37.2°C | SatO2 95% (20-07-2026)"
+  },
+  {
+    "fila_original": 38,
+    "columna": "RUT",
+    "antes": "13.435.541-7",
+    "despues": "13435541-7"
+  },
+  {
+    "fila_original": 38,
+    "columna": "Últimas consultas",
+    "antes": "25-07-2026 - Consulta salud mental (COSAM)",
+    "despues": "25-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 38,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por enfermedad meningocócica según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Enfermedad meningocócica. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 38,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 135/85 mmHg | FC 91 lpm | FR 17 rpm | Temp 37.1°C | SatO2 94% (06-08-2026)",
+    "despues": "PA 135/85 mmHg | FC 91 lpm | FR 17 rpm | Temp 37.1°C | SatO2 94% (25-07-2026)"
+  },
+  {
+    "fila_original": 39,
+    "columna": "RUT",
+    "antes": "10.011.591-3",
+    "despues": "10011591-3"
+  },
+  {
+    "fila_original": 39,
+    "columna": "Últimas consultas",
+    "antes": "15-06-2026 - Control especialidad (policlínico)",
+    "despues": "15-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 39,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por enfermedad de chagas según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Enfermedad de Chagas. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 39,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 122/74 mmHg | FC 76 lpm | FR 15 rpm | Temp 36.3°C | SatO2 95% (04-08-2026)",
+    "despues": "PA 122/74 mmHg | FC 76 lpm | FR 15 rpm | Temp 36.3°C | SatO2 95% (15-06-2026)"
+  },
+  {
+    "fila_original": 40,
+    "columna": "RUT",
+    "antes": "15.802.479-9",
+    "despues": "15802479-9"
+  },
+  {
+    "fila_original": 40,
+    "columna": "Últimas consultas",
+    "antes": "12-08-2026 - Control post-hospitalización",
+    "despues": "12-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 40,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por artritis reumatoidea. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Los Ángeles.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Artritis reumatoidea. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 40,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 150/98 mmHg | FC 68 lpm | FR 16 rpm | Temp 36.2°C | SatO2 94% (20-07-2026)",
+    "despues": "PA 150/98 mmHg | FC 68 lpm | FR 16 rpm | Temp 36.2°C | SatO2 94% (12-08-2026)"
+  },
+  {
+    "fila_original": 41,
+    "columna": "RUT",
+    "antes": "7.798.822-K",
+    "despues": "7798822-K"
+  },
+  {
+    "fila_original": 41,
+    "columna": "Últimas consultas",
+    "antes": "12-07-2026 - Consulta morbilidad general",
+    "despues": "12-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 41,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Recoleta.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Fibromialgia. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 42,
+    "columna": "RUT",
+    "antes": "9.329.726-1",
+    "despues": "9329726-1"
+  },
+  {
+    "fila_original": 42,
+    "columna": "Últimas consultas",
+    "antes": "09-06-2026 - Teleconsulta control crónico",
+    "despues": "09-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 42,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por linfoma en personas de 15 años y más. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en San Bernardo.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Linfoma en personas de 15 años y más. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 42,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 164/94 mmHg | FC 97 lpm | FR 17 rpm | Temp 36.5°C | SatO2 98% (21-08-2026)",
+    "despues": "PA 164/94 mmHg | FC 97 lpm | FR 17 rpm | Temp 36.5°C | SatO2 98% (09-06-2026)"
+  },
+  {
+    "fila_original": 43,
+    "columna": "RUT",
+    "antes": "21.234.763-9",
+    "despues": "21234763-9"
+  },
+  {
+    "fila_original": 43,
+    "columna": "Últimas consultas",
+    "antes": "24-08-2026 - Consulta salud mental (COSAM)",
+    "despues": "24-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 43,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por dengue (caso importado) según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Dengue (caso importado). Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 43,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 135/74 mmHg | FC 62 lpm | FR 15 rpm | Temp 36.5°C | SatO2 96% (11-07-2026)",
+    "despues": "PA 135/74 mmHg | FC 62 lpm | FR 15 rpm | Temp 36.5°C | SatO2 96% (24-08-2026)"
+  },
+  {
+    "fila_original": 44,
+    "columna": "RUT",
+    "antes": "15.684.164-1",
+    "despues": "15684164-1"
+  },
+  {
+    "fila_original": 44,
+    "columna": "Últimas consultas",
+    "antes": "03-06-2026 - Consulta morbilidad general",
+    "despues": "03-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 44,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Punta Arenas.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 44,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 109/66 mmHg | FC 70 lpm | FR 20 rpm | Temp 36.5°C | SatO2 99% (03-07-2026)",
+    "despues": "PA 109/66 mmHg | FC 70 lpm | FR 20 rpm | Temp 36.5°C | SatO2 99% (03-06-2026)"
+  },
+  {
+    "fila_original": 45,
+    "columna": "RUT",
+    "antes": "6.696.101-K",
+    "despues": "6696101-K"
+  },
+  {
+    "fila_original": 45,
+    "columna": "Últimas consultas",
+    "antes": "09-06-2026 - Control crónico APS (CESFAM)",
+    "despues": "09-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 45,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Alto Hospicio.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 45,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 121/65 mmHg | FC 65 lpm | FR 15 rpm | Temp 37.4°C | SatO2 98% (18-07-2026)",
+    "despues": "PA 121/65 mmHg | FC 65 lpm | FR 15 rpm | Temp 37.4°C | SatO2 98% (09-06-2026)"
+  },
+  {
+    "fila_original": 46,
+    "columna": "RUT",
+    "antes": "22.625.181-2",
+    "despues": "22625181-2"
+  },
+  {
+    "fila_original": 46,
+    "columna": "Últimas consultas",
+    "antes": "30-06-2026 - Control materno / matronería",
+    "despues": "30-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 46,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de San Fernando.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Asma bronquial leve. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 46,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 126/75 mmHg | FC 66 lpm | FR 20 rpm | Temp 36.3°C | SatO2 97% (11-07-2026)",
+    "despues": "PA 126/75 mmHg | FC 66 lpm | FR 20 rpm | Temp 36.3°C | SatO2 97% (30-06-2026)"
+  },
+  {
+    "fila_original": 47,
+    "columna": "RUT",
+    "antes": "22.726.652-K",
+    "despues": "22726652-K"
+  },
+  {
+    "fila_original": 47,
+    "columna": "Últimas consultas",
+    "antes": "04-07-2026 - Consulta odontológica",
+    "despues": "04-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 47,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de La Florida.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Migraña crónica. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 47,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 134/78 mmHg | FC 63 lpm | FR 15 rpm | Temp 36.8°C | SatO2 98% (07-07-2026)",
+    "despues": "PA 134/78 mmHg | FC 63 lpm | FR 15 rpm | Temp 36.8°C | SatO2 98% (04-07-2026)"
+  },
+  {
+    "fila_original": 48,
+    "columna": "RUT",
+    "antes": "9.127.581-3",
+    "despues": "9127581-3"
+  },
+  {
+    "fila_original": 48,
+    "columna": "Últimas consultas",
+    "antes": "09-08-2026 - Control crónico APS (CESFAM)",
+    "despues": "09-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 48,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Chillán.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 48,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 120/87 mmHg | FC 70 lpm | FR 16 rpm | Temp 36.8°C | SatO2 98% (29-07-2026)",
+    "despues": "PA 120/87 mmHg | FC 70 lpm | FR 16 rpm | Temp 36.8°C | SatO2 98% (09-08-2026)"
+  },
+  {
+    "fila_original": 49,
+    "columna": "RUT",
+    "antes": "19.923.157-K",
+    "despues": "19923157-K"
+  },
+  {
+    "fila_original": 49,
+    "columna": "Últimas consultas",
+    "antes": "24-06-2026 - Control materno / matronería",
+    "despues": "24-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 49,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por trastorno bipolar. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en El Bosque.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Trastorno bipolar. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 49,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 156/99 mmHg | FC 92 lpm | FR 19 rpm | Temp 37.2°C | SatO2 94% (07-08-2026)",
+    "despues": "PA 156/99 mmHg | FC 92 lpm | FR 19 rpm | Temp 37.2°C | SatO2 94% (24-06-2026)"
+  },
+  {
+    "fila_original": 50,
+    "columna": "RUT",
+    "antes": "16.797.056-7",
+    "despues": "16797056-7"
+  },
+  {
+    "fila_original": 50,
+    "columna": "Peso (kg)",
+    "antes": "66.3",
+    "despues": 11.6
+  },
+  {
+    "fila_original": 50,
+    "columna": "Últimas consultas",
+    "antes": "23-06-2026 - Consulta morbilidad general",
+    "despues": "23-06-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 50,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por hantavirus (síndrome cardiopulmonar) según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Hantavirus (Síndrome Cardiopulmonar). Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 50,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 127/75 mmHg | FC 95 lpm | FR 20 rpm | Temp 36.8°C | SatO2 97% (26-06-2026)",
+    "despues": "PA 127/75 mmHg | FC 95 lpm | FR 20 rpm | Temp 36.8°C | SatO2 97% (23-06-2026)"
+  },
+  {
+    "fila_original": 51,
+    "columna": "RUT",
+    "antes": "9.367.677-7",
+    "despues": "9367677-7"
+  },
+  {
+    "fila_original": 51,
+    "columna": "Últimas consultas",
+    "antes": "07-07-2026 - Consulta salud mental (COSAM)",
+    "despues": "07-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 51,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Concepción.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 51,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 114/80 mmHg | FC 62 lpm | FR 15 rpm | Temp 36.8°C | SatO2 98% (03-08-2026)",
+    "despues": "PA 114/80 mmHg | FC 62 lpm | FR 15 rpm | Temp 36.8°C | SatO2 98% (07-07-2026)"
+  },
+  {
+    "fila_original": 52,
+    "columna": "RUT",
+    "antes": "23.905.393-9",
+    "despues": "23905393-9"
+  },
+  {
+    "fila_original": 52,
+    "columna": "Últimas consultas",
+    "antes": "15-08-2026 - Control materno / matronería",
+    "despues": "15-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 52,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Santiago.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Reflujo gastroesofágico. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 52,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 130/85 mmHg | FC 65 lpm | FR 20 rpm | Temp 36.5°C | SatO2 99% (01-07-2026)",
+    "despues": "PA 130/85 mmHg | FC 65 lpm | FR 20 rpm | Temp 36.5°C | SatO2 99% (15-08-2026)"
+  },
+  {
+    "fila_original": 53,
+    "columna": "RUT",
+    "antes": "16.884.207-4",
+    "despues": "16884207-4"
+  },
+  {
+    "fila_original": 53,
+    "columna": "Últimas consultas",
+    "antes": "26-07-2026 - Control programa cardiovascular",
+    "despues": "26-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 53,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por infección por vih según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Infección por VIH. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 53,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 111/79 mmHg | FC 70 lpm | FR 19 rpm | Temp 36.5°C | SatO2 94% (22-08-2026)",
+    "despues": "PA 111/79 mmHg | FC 70 lpm | FR 19 rpm | Temp 36.5°C | SatO2 94% (26-07-2026)"
+  },
+  {
+    "fila_original": 54,
+    "columna": "RUT",
+    "antes": "21.420.627-7",
+    "despues": "21420627-7"
+  },
+  {
+    "fila_original": 54,
+    "columna": "Edad",
+    "antes": "56",
+    "despues": 65
+  },
+  {
+    "fila_original": 54,
+    "columna": "Últimas consultas",
+    "antes": "03-08-2026 - Consulta morbilidad general",
+    "despues": "03-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 54,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por órtesis (o ayudas técnicas) para personas de 65 años y más. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en El Bosque.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Órtesis (o ayudas técnicas) para personas de 65 años y más. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 54,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 157/97 mmHg | FC 97 lpm | FR 15 rpm | Temp 36.4°C | SatO2 99% (08-08-2026)",
+    "despues": "PA 157/97 mmHg | FC 97 lpm | FR 15 rpm | Temp 36.4°C | SatO2 99% (03-08-2026)"
+  },
+  {
+    "fila_original": 55,
+    "columna": "RUT",
+    "antes": "18.796.462-8",
+    "despues": "18796462-8"
+  },
+  {
+    "fila_original": 55,
+    "columna": "Últimas consultas",
+    "antes": "10-06-2026 - Consulta de urgencia",
+    "despues": "10-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 55,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Temuco.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Anemia ferropénica. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 55,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 134/74 mmHg | FC 72 lpm | FR 17 rpm | Temp 37.2°C | SatO2 94% (09-08-2026)",
+    "despues": "PA 134/74 mmHg | FC 72 lpm | FR 17 rpm | Temp 37.2°C | SatO2 94% (10-06-2026)"
+  },
+  {
+    "fila_original": 56,
+    "columna": "RUT",
+    "antes": "14.409.639-8",
+    "despues": "14409639-8"
+  },
+  {
+    "fila_original": 56,
+    "columna": "Últimas consultas",
+    "antes": "18-08-2026 - Teleconsulta control crónico",
+    "despues": "18-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 56,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Puente Alto.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 56,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 123/72 mmHg | FC 98 lpm | FR 20 rpm | Temp 36.6°C | SatO2 99% (12-08-2026)",
+    "despues": "PA 123/72 mmHg | FC 98 lpm | FR 20 rpm | Temp 36.6°C | SatO2 99% (18-08-2026)"
+  },
+  {
+    "fila_original": 57,
+    "columna": "RUT",
+    "antes": "22.837.438-5",
+    "despues": "22837438-5"
+  },
+  {
+    "fila_original": 57,
+    "columna": "Últimas consultas",
+    "antes": "08-08-2026 - Control programa cardiovascular",
+    "despues": "08-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 57,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Arica.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Asma bronquial leve. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 57,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 116/71 mmHg | FC 68 lpm | FR 20 rpm | Temp 36.8°C | SatO2 96% (22-07-2026)",
+    "despues": "PA 116/71 mmHg | FC 68 lpm | FR 20 rpm | Temp 36.8°C | SatO2 96% (08-08-2026)"
+  },
+  {
+    "fila_original": 58,
+    "columna": "RUT",
+    "antes": "24.004.379-3",
+    "despues": "24004379-3"
+  },
+  {
+    "fila_original": 58,
+    "columna": "Últimas consultas",
+    "antes": "06-08-2026 - Control post-hospitalización",
+    "despues": "06-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 58,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Temuco.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 58,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 130/82 mmHg | FC 83 lpm | FR 14 rpm | Temp 37.1°C | SatO2 94% (08-08-2026)",
+    "despues": "PA 130/82 mmHg | FC 83 lpm | FR 14 rpm | Temp 37.1°C | SatO2 94% (06-08-2026)"
+  },
+  {
+    "fila_original": 59,
+    "columna": "RUT",
+    "antes": "16.139.819-5",
+    "despues": "16139819-5"
+  },
+  {
+    "fila_original": 59,
+    "columna": "Últimas consultas",
+    "antes": "30-05-2026 - Control post-hospitalización",
+    "despues": "30-05-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 59,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por dengue (caso importado) según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Dengue (caso importado). Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 59,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 125/84 mmHg | FC 74 lpm | FR 19 rpm | Temp 36.2°C | SatO2 97% (27-06-2026)",
+    "despues": "PA 125/84 mmHg | FC 74 lpm | FR 19 rpm | Temp 36.2°C | SatO2 97% (30-05-2026)"
+  },
+  {
+    "fila_original": 60,
+    "columna": "RUT",
+    "antes": "19.694.096-0",
+    "despues": "19694096-0"
+  },
+  {
+    "fila_original": 60,
+    "columna": "Peso (kg)",
+    "antes": "61.4",
+    "despues": 22.0
+  },
+  {
+    "fila_original": 60,
+    "columna": "Últimas consultas",
+    "antes": "07-08-2026 - Consulta salud mental (COSAM)",
+    "despues": "07-08-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 60,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por fiebre tifoidea según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Fiebre tifoidea. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 60,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 131/83 mmHg | FC 69 lpm | FR 17 rpm | Temp 37.0°C | SatO2 97% (16-07-2026)",
+    "despues": "PA 131/83 mmHg | FC 69 lpm | FR 17 rpm | Temp 37.0°C | SatO2 97% (07-08-2026)"
+  },
+  {
+    "fila_original": 61,
+    "columna": "RUT",
+    "antes": "13.117.090-4",
+    "despues": "13117090-4"
+  },
+  {
+    "fila_original": 61,
+    "columna": "Últimas consultas",
+    "antes": "08-07-2026 - Consulta odontológica",
+    "despues": "08-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 61,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Ovalle.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 61,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 108/77 mmHg | FC 77 lpm | FR 15 rpm | Temp 37.4°C | SatO2 97% (19-08-2026)",
+    "despues": "PA 108/77 mmHg | FC 77 lpm | FR 15 rpm | Temp 37.4°C | SatO2 97% (08-07-2026)"
+  },
+  {
+    "fila_original": 62,
+    "columna": "RUT",
+    "antes": "24.126.622-2",
+    "despues": "24126622-2"
+  },
+  {
+    "fila_original": 62,
+    "columna": "Edad",
+    "antes": "32",
+    "despues": 65
+  },
+  {
+    "fila_original": 62,
+    "columna": "Últimas consultas",
+    "antes": "29-07-2026 - Teleconsulta control crónico",
+    "despues": "29-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 62,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por órtesis (o ayudas técnicas) para personas de 65 años y más. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Quilicura.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Órtesis (o ayudas técnicas) para personas de 65 años y más. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 62,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 154/99 mmHg | FC 60 lpm | FR 16 rpm | Temp 37.2°C | SatO2 95% (16-08-2026)",
+    "despues": "PA 154/99 mmHg | FC 60 lpm | FR 16 rpm | Temp 37.2°C | SatO2 95% (29-07-2026)"
+  },
+  {
+    "fila_original": 63,
+    "columna": "RUT",
+    "antes": "9.659.245-0",
+    "despues": "9659245-0"
+  },
+  {
+    "fila_original": 63,
+    "columna": "Edad",
+    "antes": "4",
+    "despues": 1
+  },
+  {
+    "fila_original": 63,
+    "columna": "Peso (kg)",
+    "antes": "67.2",
+    "despues": 11.6
+  },
+  {
+    "fila_original": 63,
+    "columna": "Últimas consultas",
+    "antes": "02-08-2026 - Consulta de urgencia",
+    "despues": "02-08-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 63,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por displasia luxante de caderas. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Quilicura.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Displasia luxante de caderas. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 63,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 153/91 mmHg | FC 90 lpm | FR 17 rpm | Temp 37.1°C | SatO2 98% (18-07-2026)",
+    "despues": "PA 153/91 mmHg | FC 90 lpm | FR 17 rpm | Temp 37.1°C | SatO2 98% (02-08-2026)"
+  },
+  {
+    "fila_original": 64,
+    "columna": "RUT",
+    "antes": "10.977.257-7",
+    "despues": "10977257-7"
+  },
+  {
+    "fila_original": 64,
+    "columna": "Peso (kg)",
+    "antes": "102.9",
+    "despues": 24.6
+  },
+  {
+    "fila_original": 64,
+    "columna": "Últimas consultas",
+    "antes": "24-06-2026 - Consulta salud mental (COSAM)",
+    "despues": "24-06-2026 - Control pediátrico"
+  },
+  {
+    "fila_original": 64,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por infección por vih según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Infección por VIH. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 64,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 136/87 mmHg | FC 88 lpm | FR 14 rpm | Temp 37.3°C | SatO2 96% (17-07-2026)",
+    "despues": "PA 136/87 mmHg | FC 88 lpm | FR 14 rpm | Temp 37.3°C | SatO2 96% (24-06-2026)"
+  },
+  {
+    "fila_original": 65,
+    "columna": "RUT",
+    "antes": "13.214.976-3",
+    "despues": "13214976-3"
+  },
+  {
+    "fila_original": 65,
+    "columna": "Últimas consultas",
+    "antes": "18-07-2026 - Control materno / matronería",
+    "despues": "18-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 65,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por gonorrea según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Gonorrea. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 65,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 111/87 mmHg | FC 67 lpm | FR 20 rpm | Temp 37.0°C | SatO2 98% (09-07-2026)",
+    "despues": "PA 111/87 mmHg | FC 67 lpm | FR 20 rpm | Temp 37.0°C | SatO2 98% (18-07-2026)"
+  },
+  {
+    "fila_original": 66,
+    "columna": "RUT",
+    "antes": "18.503.953-6",
+    "despues": "18503953-6"
+  },
+  {
+    "fila_original": 66,
+    "columna": "Últimas consultas",
+    "antes": "01-07-2026 - Control especialidad (policlínico)",
+    "despues": "01-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 66,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Antofagasta.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Obesidad. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 66,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 135/67 mmHg | FC 65 lpm | FR 20 rpm | Temp 36.2°C | SatO2 97% (18-08-2026)",
+    "despues": "PA 135/67 mmHg | FC 65 lpm | FR 20 rpm | Temp 36.2°C | SatO2 97% (01-07-2026)"
+  },
+  {
+    "fila_original": 67,
+    "columna": "RUT",
+    "antes": "13.524.409-0",
+    "despues": "13524409-0"
+  },
+  {
+    "fila_original": 67,
+    "columna": "Últimas consultas",
+    "antes": "01-07-2026 - Control crónico APS (CESFAM)",
+    "despues": "01-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 67,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sano, sin antecedentes mórbidos relevantes. Consulta de control en Chillán.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sin antecedentes mórbidos relevantes. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 67,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 127/68 mmHg | FC 96 lpm | FR 18 rpm | Temp 36.4°C | SatO2 99% (25-07-2026)",
+    "despues": "PA 127/68 mmHg | FC 96 lpm | FR 18 rpm | Temp 36.4°C | SatO2 99% (01-07-2026)"
+  },
+  {
+    "fila_original": 68,
+    "columna": "RUT",
+    "antes": "17.402.623-8",
+    "despues": "17402623-8"
+  },
+  {
+    "fila_original": 68,
+    "columna": "Últimas consultas",
+    "antes": "06-06-2026 - Teleconsulta control crónico",
+    "despues": "06-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 68,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Independencia.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Reflujo gastroesofágico. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 68,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 122/65 mmHg | FC 71 lpm | FR 16 rpm | Temp 37.0°C | SatO2 96% (27-06-2026)",
+    "despues": "PA 122/65 mmHg | FC 71 lpm | FR 16 rpm | Temp 37.0°C | SatO2 96% (06-06-2026)"
+  },
+  {
+    "fila_original": 69,
+    "columna": "RUT",
+    "antes": "8.850.685-5",
+    "despues": "8850685-5"
+  },
+  {
+    "fila_original": 69,
+    "columna": "Últimas consultas",
+    "antes": "21-08-2026 - Control programa cardiovascular",
+    "despues": "21-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 69,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de San Carlos.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Asma bronquial leve. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 69,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 134/75 mmHg | FC 70 lpm | FR 16 rpm | Temp 36.5°C | SatO2 96% (06-07-2026)",
+    "despues": "PA 134/75 mmHg | FC 70 lpm | FR 16 rpm | Temp 36.5°C | SatO2 96% (21-08-2026)"
+  },
+  {
+    "fila_original": 70,
+    "columna": "RUT",
+    "antes": "22.328.685-2",
+    "despues": "22328685-2"
+  },
+  {
+    "fila_original": 70,
+    "columna": "Últimas consultas",
+    "antes": "23-06-2026 - Teleconsulta control crónico",
+    "despues": "23-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 70,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por sarampión según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Sarampión. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 70,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 118/81 mmHg | FC 67 lpm | FR 16 rpm | Temp 36.7°C | SatO2 96% (12-07-2026)",
+    "despues": "PA 118/81 mmHg | FC 67 lpm | FR 16 rpm | Temp 36.7°C | SatO2 96% (23-06-2026)"
+  },
+  {
+    "fila_original": 71,
+    "columna": "Nombre",
+    "antes": "Pedro",
+    "despues": "Daniela"
+  },
+  {
+    "fila_original": 71,
+    "columna": "RUT",
+    "antes": "24.747.651-2",
+    "despues": "24747651-2"
+  },
+  {
+    "fila_original": 71,
+    "columna": "Sexo",
+    "antes": "Masculino",
+    "despues": "Femenino"
+  },
+  {
+    "fila_original": 71,
+    "columna": "Últimas consultas",
+    "antes": "07-08-2026 - Consulta de urgencia",
+    "despues": "07-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 71,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por cáncer cervicouterino. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Maipú.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Cáncer cervicouterino. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 71,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 163/92 mmHg | FC 68 lpm | FR 17 rpm | Temp 36.8°C | SatO2 95% (23-07-2026)",
+    "despues": "PA 163/92 mmHg | FC 68 lpm | FR 17 rpm | Temp 36.8°C | SatO2 95% (07-08-2026)"
+  },
+  {
+    "fila_original": 72,
+    "columna": "RUT",
+    "antes": "18.141.761-7",
+    "despues": "18141761-7"
+  },
+  {
+    "fila_original": 72,
+    "columna": "Últimas consultas",
+    "antes": "12-06-2026 - Consulta salud mental (COSAM)",
+    "despues": "12-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 72,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente GES por hipoacusia bilateral en personas mayores de 65 años, cursa además con gonorrea notificada a la autoridad sanitaria (ENO). Doble seguimiento clínico y epidemiológico.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Hipoacusia bilateral en personas mayores de 65 años; Gonorrea. Condición indicada para pruebas: GES/AUGE y ENO."
+  },
+  {
+    "fila_original": 72,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 162/90 mmHg | FC 80 lpm | FR 15 rpm | Temp 37.1°C | SatO2 98% (26-07-2026)",
+    "despues": "PA 162/90 mmHg | FC 80 lpm | FR 15 rpm | Temp 37.1°C | SatO2 98% (12-06-2026)"
+  },
+  {
+    "fila_original": 73,
+    "columna": "Nombre",
+    "antes": "Fernanda",
+    "despues": "Daniel"
+  },
+  {
+    "fila_original": 73,
+    "columna": "RUT",
+    "antes": "10.955.648-3",
+    "despues": "10955648-3"
+  },
+  {
+    "fila_original": 73,
+    "columna": "Sexo",
+    "antes": "Femenino",
+    "despues": "Masculino"
+  },
+  {
+    "fila_original": 73,
+    "columna": "Últimas consultas",
+    "antes": "12-07-2026 - Control post-hospitalización",
+    "despues": "12-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 73,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por cáncer de próstata en personas de 15 años y más. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Coquimbo.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Cáncer de próstata en personas de 15 años y más. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 73,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 170/91 mmHg | FC 93 lpm | FR 18 rpm | Temp 36.4°C | SatO2 96% (02-08-2026)",
+    "despues": "PA 170/91 mmHg | FC 93 lpm | FR 18 rpm | Temp 36.4°C | SatO2 96% (12-07-2026)"
+  },
+  {
+    "fila_original": 74,
+    "columna": "RUT",
+    "antes": "16.607.861-K",
+    "despues": "16607861-K"
+  },
+  {
+    "fila_original": 74,
+    "columna": "Últimas consultas",
+    "antes": "02-08-2026 - Control materno / matronería",
+    "despues": "02-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 74,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por leptospirosis según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Leptospirosis. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 74,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 133/86 mmHg | FC 96 lpm | FR 19 rpm | Temp 36.9°C | SatO2 98% (04-08-2026)",
+    "despues": "PA 133/86 mmHg | FC 96 lpm | FR 19 rpm | Temp 36.9°C | SatO2 98% (02-08-2026)"
+  },
+  {
+    "fila_original": 75,
+    "columna": "RUT",
+    "antes": "23.014.372-2",
+    "despues": "23014372-2"
+  },
+  {
+    "fila_original": 75,
+    "columna": "Últimas consultas",
+    "antes": "15-08-2026 - Consulta de urgencia",
+    "despues": "15-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 75,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por covid-19 según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: COVID-19. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 75,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 108/76 mmHg | FC 78 lpm | FR 14 rpm | Temp 36.9°C | SatO2 94% (16-07-2026)",
+    "despues": "PA 108/76 mmHg | FC 78 lpm | FR 14 rpm | Temp 36.9°C | SatO2 94% (15-08-2026)"
+  },
+  {
+    "fila_original": 76,
+    "columna": "RUT",
+    "antes": "20.688.730-3",
+    "despues": "20688730-3"
+  },
+  {
+    "fila_original": 76,
+    "columna": "Últimas consultas",
+    "antes": "25-06-2026 - Consulta odontológica",
+    "despues": "25-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 76,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por diabetes mellitus tipo 2. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en La Florida.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Diabetes Mellitus tipo 2. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 76,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 160/91 mmHg | FC 92 lpm | FR 19 rpm | Temp 36.3°C | SatO2 95% (10-07-2026)",
+    "despues": "PA 160/91 mmHg | FC 92 lpm | FR 19 rpm | Temp 36.3°C | SatO2 95% (25-06-2026)"
+  },
+  {
+    "fila_original": 77,
+    "columna": "RUT",
+    "antes": "11.045.691-3",
+    "despues": "11045691-3"
+  },
+  {
+    "fila_original": 77,
+    "columna": "Últimas consultas",
+    "antes": "30-05-2026 - Teleconsulta control crónico",
+    "despues": "30-05-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 77,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por retinopatía diabética. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Tocopilla.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Retinopatía diabética. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 77,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 109/75 mmHg | FC 66 lpm | FR 18 rpm | Temp 37.0°C | SatO2 96% (08-08-2026)",
+    "despues": "PA 109/75 mmHg | FC 66 lpm | FR 18 rpm | Temp 37.0°C | SatO2 96% (30-05-2026)"
+  },
+  {
+    "fila_original": 78,
+    "columna": "RUT",
+    "antes": "18.140.936-3",
+    "despues": "18140936-3"
+  },
+  {
+    "fila_original": 78,
+    "columna": "Últimas consultas",
+    "antes": "16-07-2026 - Consulta odontológica",
+    "despues": "16-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 78,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por parotiditis según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Parotiditis. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 78,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 113/86 mmHg | FC 93 lpm | FR 14 rpm | Temp 36.9°C | SatO2 97% (23-07-2026)",
+    "despues": "PA 113/86 mmHg | FC 93 lpm | FR 14 rpm | Temp 36.9°C | SatO2 97% (16-07-2026)"
+  },
+  {
+    "fila_original": 79,
+    "columna": "RUT",
+    "antes": "11.175.863-8",
+    "despues": "11175863-8"
+  },
+  {
+    "fila_original": 79,
+    "columna": "Últimas consultas",
+    "antes": "15-08-2026 - Consulta de urgencia",
+    "despues": "15-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 79,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de Antofagasta.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Várices en extremidades inferiores. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 79,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 138/66 mmHg | FC 81 lpm | FR 20 rpm | Temp 36.9°C | SatO2 98% (31-07-2026)",
+    "despues": "PA 138/66 mmHg | FC 81 lpm | FR 20 rpm | Temp 36.9°C | SatO2 98% (15-08-2026)"
+  },
+  {
+    "fila_original": 80,
+    "columna": "RUT",
+    "antes": "20.783.995-7",
+    "despues": "20783995-7"
+  },
+  {
+    "fila_original": 80,
+    "columna": "Últimas consultas",
+    "antes": "25-07-2026 - Control materno / matronería",
+    "despues": "25-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 80,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente GES por fibrosis quística, cursa además con enfermedad de chagas notificada a la autoridad sanitaria (ENO). Doble seguimiento clínico y epidemiológico.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Fibrosis quística; Enfermedad de Chagas. Condición indicada para pruebas: GES/AUGE y ENO."
+  },
+  {
+    "fila_original": 80,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 157/94 mmHg | FC 90 lpm | FR 20 rpm | Temp 36.4°C | SatO2 99% (19-07-2026)",
+    "despues": "PA 157/94 mmHg | FC 90 lpm | FR 20 rpm | Temp 36.4°C | SatO2 99% (25-07-2026)"
+  },
+  {
+    "fila_original": 81,
+    "columna": "RUT",
+    "antes": "11.379.189-6",
+    "despues": "11379189-6"
+  },
+  {
+    "fila_original": 81,
+    "columna": "Últimas consultas",
+    "antes": "07-08-2026 - Consulta de urgencia",
+    "despues": "07-08-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 81,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por leucemia en personas de 15 años y más. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Talca.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Leucemia en personas de 15 años y más. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 81,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 111/87 mmHg | FC 93 lpm | FR 20 rpm | Temp 36.3°C | SatO2 94% (07-07-2026)",
+    "despues": "PA 111/87 mmHg | FC 93 lpm | FR 20 rpm | Temp 36.3°C | SatO2 94% (07-08-2026)"
+  },
+  {
+    "fila_original": 82,
+    "columna": "RUT",
+    "antes": "9.324.677-2",
+    "despues": "9324677-2"
+  },
+  {
+    "fila_original": 82,
+    "columna": "Últimas consultas",
+    "antes": "02-07-2026 - Control crónico APS (CESFAM)",
+    "despues": "02-07-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 82,
+    "columna": "Antecedentes médicos",
+    "antes": "Caso notificado por varicela según Reglamento ENO (Decreto 7/2019 MINSAL). Notificación enviada a SEREMI de Salud correspondiente. Vigilancia epidemiológica activa.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Varicela. Condición indicada para pruebas: ENO."
+  },
+  {
+    "fila_original": 82,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 120/77 mmHg | FC 65 lpm | FR 16 rpm | Temp 36.4°C | SatO2 96% (26-06-2026)",
+    "despues": "PA 120/77 mmHg | FC 65 lpm | FR 16 rpm | Temp 36.4°C | SatO2 96% (02-07-2026)"
+  },
+  {
+    "fila_original": 83,
+    "columna": "RUT",
+    "antes": "16.104.957-3",
+    "despues": "16104957-3"
+  },
+  {
+    "fila_original": 83,
+    "columna": "Últimas consultas",
+    "antes": "07-06-2026 - Control crónico APS (CESFAM)",
+    "despues": "07-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 83,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente sin patología GES ni ENO activa. Controles habituales en atención primaria de San Fernando.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Gastritis crónica. Condición indicada para pruebas: No aplica."
+  },
+  {
+    "fila_original": 83,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 114/82 mmHg | FC 98 lpm | FR 18 rpm | Temp 36.7°C | SatO2 96% (09-08-2026)",
+    "despues": "PA 114/82 mmHg | FC 98 lpm | FR 18 rpm | Temp 36.7°C | SatO2 96% (07-06-2026)"
+  },
+  {
+    "fila_original": 84,
+    "columna": "RUT",
+    "antes": "19.977.689-4",
+    "despues": "19977689-4"
+  },
+  {
+    "fila_original": 84,
+    "columna": "Últimas consultas",
+    "antes": "09-06-2026 - Consulta odontológica",
+    "despues": "09-06-2026 - Control de seguimiento"
+  },
+  {
+    "fila_original": 84,
+    "columna": "Antecedentes médicos",
+    "antes": "Paciente en Programa GES por linfoma en personas de 15 años y más. Ingreso a garantía explícita registrado en REM-A. Seguimiento activo en Castro.",
+    "despues": "Registro ficticio de demostración. Antecedentes declarados: Linfoma en personas de 15 años y más. Condición indicada para pruebas: GES/AUGE."
+  },
+  {
+    "fila_original": 84,
+    "columna": "Signos vitales (últimos exámenes)",
+    "antes": "PA 114/74 mmHg | FC 87 lpm | FR 14 rpm | Temp 36.9°C | SatO2 95% (19-07-2026)",
+    "despues": "PA 114/74 mmHg | FC 87 lpm | FR 14 rpm | Temp 36.9°C | SatO2 95% (09-06-2026)"
+  }
+]

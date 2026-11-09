@@ -1,0 +1,87 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            {% block title %}
+                Gestor ENO
+            {% endblock %}
+        </title>
+        <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'app.css' %}">
+    </head>
+    <body>
+        <a class="visually-hidden-focusable" href="#contenido">
+            Ir al contenido
+        </a>
+        <header class="navbar navbar-expand-lg navbar-dark py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="{% url 'indicadores:panel' %}">
+                    Gestor ENO
+                </a>
+                <span class="navbar-text small d-none d-xl-inline">
+                    Análisis de registros clínicos
+                </span>
+                {% if user.is_authenticated %}
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal"
+                        aria-controls="menuPrincipal"
+                        aria-expanded="false"
+                        aria-label="Abrir navegación"
+                    >
+                        <span class="navbar-toggler-icon">
+                        </span>
+                    </button>
+                    <nav class="collapse navbar-collapse" id="menuPrincipal" aria-label="Principal">
+                        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'indicadores:panel' %}">
+                                    Indicadores
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'importaciones:importar' %}">
+                                    Importar planilla
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{% url 'pacientes:listado' %}">
+                                    Pacientes
+                                </a>
+                            </li>
+                            {% if user.is_staff %}
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{% url 'admin:index' %}">
+                                        Administración
+                                    </a>
+                                </li>
+                            {% endif %}
+                            <li class="nav-item">
+                                <form method="post" action="{% url 'logout' %}" class="ms-lg-2 mt-2 mt-lg-0">
+                                    {% csrf_token %}
+                                    <button class="btn btn-outline-light btn-sm" type="submit">
+                                        Salir
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </nav>
+                {% endif %}
+            </div>
+        </header>
+        <main id="contenido" class="container py-4 py-lg-5">
+            {% block content %}
+            {% endblock %}
+        </main>
+        <footer class="container pb-4 text-secondary small">
+            Apoyo al análisis interno. La clasificación requiere un diccionario validado por el establecimiento.
+        </footer>
+        <script src="{% static 'vendor/bootstrap/bootstrap.bundle.min.js' %}" defer>
+        </script>
+    </body>
+</html>
