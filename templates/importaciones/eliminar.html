@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p class="etiqueta">GESTIÓN DE IMPORTACIONES</p>
+    <h1>Eliminar última importación</h1>
+    <p><strong>{{ lote.archivo }}</strong> · {{ lote.creada }}</p>
+    {% if desactualizada %}
+        <div class="alert alert-warning" role="alert">
+            Ya existe otra importación más reciente. Solo puedes eliminar la última carga.
+        </div>
+        <a class="btn btn-primary" href="{% url 'importaciones:importar' %}">Volver a importaciones</a>
+    {% else %}
+        <section class="card card-body p-4 my-4">
+            <h2>Datos que se eliminarán</h2>
+            <dl>
+                <dt>Consultas de este archivo</dt>
+                <dd>{{ resumen.consultas }}</dd>
+                <dt>Filas de inconsistencias y conflictos</dt>
+                <dd>{{ resumen.inconsistencias }}</dd>
+                <dt>Pacientes que dependen únicamente de esta importación</dt>
+                <dd>{{ resumen.pacientes_eliminados }}</dd>
+                <dt>Pacientes conservados por tener otros registros</dt>
+                <dd>{{ resumen.pacientes_conservados }}</dd>
+            </dl>
+            <p>
+                Se conservan las consultas de otros archivos, las atenciones manuales y las fichas
+                gestionadas manualmente. En pacientes compartidos se recuperan los datos previos
+                disponibles, respetando las correcciones posteriores.
+            </p>
+            <p>El catálogo de enfermedades y las reglas se conservan. Los indicadores se actualizarán con los registros restantes.</p>
+            {% if not resumen.consultas %}
+                <div class="alert alert-info">
+                    Esta carga no añadió consultas nuevas. Eliminarla no borra los datos de cargas anteriores.
+                </div>
+            {% endif %}
+            <div class="alert alert-danger">Esta operación es definitiva y no elimina el archivo Excel original.</div>
+            {% if error %}
+                <div class="alert alert-danger" role="alert">{{ error }}</div>
+            {% endif %}
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" name="confirmar" value="si" id="confirmar" required>
+                    <label class="form-check-label" for="confirmar">Confirmo que quiero borrar esta importación y los datos indicados.</label>
+                </div>
+                <div class="d-flex flex-wrap gap-3 align-items-center">
+                    <button class="btn btn-danger" type="submit">Eliminar importación y sus datos</button>
+                    <a href="{% url 'importaciones:importar' %}">Cancelar</a>
+                </div>
+            </form>
+        </section>
+    {% endif %}
+{% endblock %}

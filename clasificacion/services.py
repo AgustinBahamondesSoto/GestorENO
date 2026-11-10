@@ -4,6 +4,7 @@ import unicodedata
 from abc import ABC, abstractmethod
 
 from .models import ReglaClasificacion
+from django.db import transaction
 
 
 def simplificar(texto):
@@ -39,3 +40,32 @@ class MotorReconocimiento:
             'enfermedades': sorted({r.enfermedad for r in coincidencias}),
             'reglas_aplicadas': [{'id': r.pk, 'nombre': r.nombre, 'categoria': r.categoria, 'enfermedad': r.enfermedad} for r in coincidencias],
         }
+
+
+def actualizar_clasificacion(consulta, motor=None):
+    from .catalogo import sincronizar_enfermedades
+
+    motor = motor or MotorReconocimiento()
+    resultado = motor.clasificar(consulta.antecedentes, consulta.signos_vitales, consulta.enfermedades_declaradas)
+    nueva = resultado['clasificacion']
+    anterior = consulta.clasificacion
+    if nueva != anterior:
+        consulta.ges_vigente = nueva == 'GES_AUGE'
+        consulta.eno_notificado = False
+    for campo, valor in resultado.items():
+        setattr(consulta, campo, valor)
+    consulta.save(update_fields=[*resultado, 'ges_vigente', 'eno_notificado'])
+    sincronizar_enfermedades(consulta)
+
+
+@transaction.atomic
+def reclasificar_historial():
+    from pacientes.models import Consulta
+
+    motor = MotorReconocimiento()
+    cantidad = 0
+    # También se procesa con cero reglas: evita dejar clasificaciones obsoletas.
+    for consulta in Consulta.objects.all().iterator():
+        actualizar_clasificacion(consulta, motor)
+        cantidad += 1
+    return cantidad

@@ -16,7 +16,7 @@ def descarga(contenido, nombre):
 def exportar(request):
     filtros = FiltrosForm(request.GET)
     if not filtros.is_valid():
-        return HttpResponse('Filtros inválidos. Revise el rango de edad y la categoría.', status=400)
+        return HttpResponse('Filtros inválidos. Revise edad, sexo, previsión, categoría y enfermedad.', status=400)
     return descarga(generar_reporte(filtros.cleaned_data), 'reporte_gestor_eno.xlsx')
 
 

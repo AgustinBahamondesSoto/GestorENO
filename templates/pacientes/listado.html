@@ -6,6 +6,10 @@
     <h1>
         Pacientes
     </h1>
+    <div class="d-flex flex-wrap gap-3 my-3">
+        <a class="btn btn-primary" href="{% url 'pacientes:nuevo' %}">Registrar paciente</a>
+        <a class="btn btn-outline-secondary" href="{% url 'clasificacion:enfermedad_nueva' %}">Agregar enfermedad al catálogo</a>
+    </div>
     <form method="get">
         <label class="form-label" for="q">
             Buscar por nombre o RUT

@@ -16,10 +16,13 @@ from openpyxl import load_workbook
 from openpyxl.utils.exceptions import InvalidFileException
 
 from clasificacion.services import MotorReconocimiento, simplificar
+from clasificacion.catalogo import sincronizar_enfermedades
 from pacientes.models import Consulta
 from pacientes.repositories import RepositorioDjango
 from pacientes.validators import normalizar_rut
-from .models import Importacion, Inconsistencia
+from .models import Importacion, Inconsistencia, EstadoPacienteImportacion
+
+CAMPOS_MAESTRO = ('nombre', 'apellido', 'domicilio_comuna', 'edad', 'sexo', 'prevision')
 
 
 COLUMNAS = ('nombre', 'rut', 'edad', 'peso', 'sexo', 'prevision', 'antecedentes medicos', 'signos vitales')
@@ -181,6 +184,10 @@ def _procesar_filas(filas, nombre, usuario, repositorio):
             continue
         maestro = {k: datos[k] for k in ('nombre', 'apellido', 'domicilio_comuna', 'edad', 'sexo', 'prevision')}
         paciente, creado = repositorio.obtener_o_crear(datos['rut'], maestro)
+        estado, _ = EstadoPacienteImportacion.objects.get_or_create(
+            importacion=lote, paciente=paciente,
+            defaults={'antes': {} if creado else {k: getattr(paciente, k) for k in CAMPOS_MAESTRO}},
+        )
         lote.pacientes_nuevos += int(creado)
         anterior = paciente.consultas.order_by('-fecha', '-registrada', '-pk').first()
         if not creado:
@@ -191,9 +198,12 @@ def _procesar_filas(filas, nombre, usuario, repositorio):
                 for k, v in maestro.items():
                     setattr(paciente, k, v)
                 paciente.save()
+        estado.despues = {k: getattr(paciente, k) for k in CAMPOS_MAESTRO}
+        estado.save(update_fields=['despues'])
         resultado = motor.clasificar(datos['antecedentes'], datos['signos_vitales'], datos['enfermedades_declaradas'])
         campos = {k: v for k, v in datos.items() if k != 'rut'}
-        Consulta.objects.create(paciente=paciente, importacion=lote, fila=numero, huella=huella, **campos, **resultado, ges_vigente=resultado['clasificacion'] == 'GES_AUGE')
+        consulta = Consulta.objects.create(paciente=paciente, importacion=lote, fila=numero, huella=huella, **campos, **resultado, ges_vigente=resultado['clasificacion'] == 'GES_AUGE')
+        sincronizar_enfermedades(consulta)
         lote.validas += 1
     lote.save()
     return lote

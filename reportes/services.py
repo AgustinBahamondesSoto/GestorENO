@@ -2,7 +2,7 @@ from io import BytesIO
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
 from pacientes.models import Consulta
-from indicadores.services import calcular_indicadores, filtrar_pacientes
+from indicadores.services import calcular_indicadores, filtrar_pacientes, resultados_pacientes, consultas_filtradas
 
 
 def texto_excel(valor):
@@ -33,7 +33,15 @@ def generar_reporte(filtros=None):
     resumen.title = 'Resumen'
     resumen.append(['Indicador', 'Valor'])
     resumen.append(['Pacientes únicos por RUT', datos['total']])
-    resumen.append(['Base de cálculo', 'Historial completo de pacientes filtrados; una persona puede aparecer en varias categorías.'])
+    resumen.append(['Base de cálculo', 'Pacientes únicos y consultas que cumplen los filtros; una persona puede aparecer en varias categorías.'])
+    detalle = libro.create_sheet('Pacientes filtrados')
+    detalle.append(['RUT', 'Nombre', 'Enfermedades registradas', 'Clasificación'])
+    for resultado in resultados_pacientes(filtros):
+        paciente = resultado['paciente']
+        detalle.append([texto_excel(v) for v in [
+            paciente.rut, paciente.nombre_completo,
+            ', '.join(resultado['enfermedades']), ', '.join(resultado['clasificaciones']),
+        ]])
     for clave, titulo in [('edades', 'Edad'), ('sexos', 'Sexo'), ('previsiones', 'Previsión'), ('categorias', 'GES y ENO'), ('enfermedades', 'Prevalencia')]:
         hoja = libro.create_sheet(titulo)
         hoja.append(['Grupo', 'Pacientes únicos', 'Porcentaje de la población filtrada'])
@@ -44,7 +52,7 @@ def generar_reporte(filtros=None):
         hoja = libro.create_sheet(titulo)
         hoja.append(['RUT', 'Nombre', 'Edad actual', 'Sexo', 'Previsión', 'Consultas del reporte', 'Enfermedades detectadas'])
         agrupadas = {}
-        for c in Consulta.objects.filter(paciente__in=pacientes, **condiciones).select_related('paciente'):
+        for c in consultas_filtradas(filtros).filter(paciente__in=pacientes, **condiciones).select_related('paciente'):
             fila = agrupadas.setdefault(c.paciente_id, {'paciente': c.paciente, 'cantidad': 0, 'enfermedades': set()})
             fila['cantidad'] += 1
             fila['enfermedades'].update(c.enfermedades)

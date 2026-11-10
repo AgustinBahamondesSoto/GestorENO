@@ -27,4 +27,5 @@ urlpatterns = [
     path('pacientes/', include('pacientes.urls')),
     path('importaciones/', include('importaciones.urls')),
     path('reportes/', include('reportes.urls')),
+    path('clasificacion/', include('clasificacion.urls')),
 ]

@@ -1,7 +1,6 @@
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from clasificacion.services import MotorReconocimiento
-from pacientes.models import Consulta
+from clasificacion.services import MotorReconocimiento, reclasificar_historial
 
 
 class Command(BaseCommand):
@@ -11,17 +10,6 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         motor = MotorReconocimiento()
         if not motor.reglas:
-            self.stderr.write('No hay reglas activas. No se modificaron las consultas.')
-            return
-        cantidad = 0
-        for consulta in Consulta.objects.iterator():
-            resultado = motor.clasificar(consulta.antecedentes, consulta.signos_vitales, consulta.enfermedades_declaradas)
-            if resultado['clasificacion'] == 'GES_AUGE' and consulta.clasificacion != 'GES_AUGE':
-                consulta.ges_vigente = True
-            if resultado['clasificacion'] == 'ENO' and consulta.clasificacion != 'ENO':
-                consulta.eno_notificado = False
-            for campo, valor in resultado.items():
-                setattr(consulta, campo, valor)
-            consulta.save(update_fields=[*resultado.keys(), 'ges_vigente', 'eno_notificado'])
-            cantidad += 1
+            self.stderr.write('No hay reglas activas. Los resultados anteriores se actualizarán a Sin coincidencias.')
+        cantidad = reclasificar_historial()
         self.stdout.write(self.style.SUCCESS(f'Consultas reclasificadas: {cantidad}'))

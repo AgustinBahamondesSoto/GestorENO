@@ -9,6 +9,9 @@
     <p>
         {{ lote.creada }}
     </p>
+    {% if ultima.pk == lote.pk %}
+        <a class="btn btn-outline-danger my-3" href="{% url 'importaciones:eliminar' lote.pk %}">Eliminar esta importación y sus datos</a>
+    {% endif %}
     <section class="card card-body p-4 my-4">
         <dl>
             <dt>

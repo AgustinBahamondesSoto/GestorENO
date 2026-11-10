@@ -119,3 +119,12 @@ Estas asignaciones reproducen la planificación del informe; no implican que esa
 - Revisar con la usuaria la planilla de referencia y los reportes finales.
 - Medir el objetivo del informe de al menos 95 % de acierto clínico con muestras validadas; no se considera demostrado por pruebas sintéticas.
 - Medir la cobertura objetivo de al menos 80 % en deduplicación y cálculo y mantener las pruebas al evolucionar las reglas.
+
+## Ampliación tras la retroalimentación del profesor
+
+- PB-02: registro y edición de pacientes desde la web; alta y corrección de atenciones con enfermedades del catálogo o nuevas; auditoría con valores anteriores y nuevos.
+- PB-03: catálogo de enfermedades, creación y edición de reglas desde la web y reclasificación transaccional automática. Se pueden desactivar reglas y actualizar el historial con un botón.
+- PB-04: filtro de enfermedad asociado a la categoría en una misma atención y tabla paginada con nombre, RUT, enfermedades y clasificación.
+- PB-05: hoja Pacientes filtrados en Excel, con los mismos criterios del panel y todos sus resultados.
+
+Los procedimientos están documentados en [GUIA_DE_USO.md](GUIA_DE_USO.md). La nueva plantilla de Valdivia y el texto de acceso del equipo se conservaron. Las categorías clínicas no se asignan por copiar etiquetas de una planilla ficticia.

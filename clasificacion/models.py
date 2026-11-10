@@ -1,6 +1,29 @@
 from django.db import models
 from django.core.exceptions import ValidationError
 import re
+import unicodedata
+
+
+def clave_enfermedad(nombre):
+    texto = ' '.join(nombre.split()).casefold()
+    return ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
+
+
+class Enfermedad(models.Model):
+    nombre = models.CharField(max_length=150)
+    clave = models.CharField(max_length=150, unique=True, editable=False)
+
+    class Meta:
+        ordering = ['nombre', 'pk']
+        verbose_name_plural = 'enfermedades'
+
+    def save(self, *args, **kwargs):
+        self.nombre = ' '.join(self.nombre.split())
+        self.clave = clave_enfermedad(self.nombre)
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return self.nombre
 
 
 class ReglaClasificacion(models.Model):

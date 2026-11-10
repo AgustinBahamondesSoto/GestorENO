@@ -18,6 +18,10 @@
     <p>
         {{ paciente.domicilio_comuna }}
     </p>
+    <div class="d-flex flex-wrap gap-3 my-3">
+        <a class="btn btn-primary" href="{% url 'pacientes:agregar_consulta' paciente.pk %}">Agregar enfermedad o atención</a>
+        <a class="btn btn-outline-secondary" href="{% url 'pacientes:editar' paciente.pk %}">Editar paciente</a>
+    </div>
     <h2>
         Consultas
     </h2>
@@ -31,8 +35,12 @@
             <p>
                 {{ c.edad }}
                 años ·
-                {{ c.peso }}
-                kg ·
+                {% if c.peso %}
+                    {{ c.peso }} kg
+                {% else %}
+                    Sin peso registrado
+                {% endif %}
+                ·
                 {{ c.prevision }}
             </p>
             <dl>
@@ -80,6 +88,10 @@
                 </dd>
             </dl>
             <p>
+                <a href="{% url 'pacientes:editar_consulta' paciente.pk c.pk %}">Corregir datos de esta atención</a>
+            </p>
+            {% if c.importacion_id %}
+            <p>
                 Origen:
                 <a href="{% url 'importaciones:detalle' c.importacion_id %}">
                     importación
@@ -89,6 +101,9 @@
                 {{ c.fila }}
                 .
             </p>
+            {% else %}
+                <p>Registro manual · {{ c.registrada }} · {{ c.usuario|default:'Usuario no disponible' }}</p>
+            {% endif %}
             {% if c.clasificacion == 'ENO' %}
                 <p>
                     Notificación registrada:
@@ -112,4 +127,12 @@
         </p>
     {% endfor %}
     {% include 'paginacion.html' %}
+    <section class="card card-body p-4 my-4">
+        <h2>Registro de cambios de la ficha</h2>
+        {% for cambio in paciente.cambios.all|slice:':15' %}
+            <p>{{ cambio.fecha }} · {{ cambio.accion }} · {{ cambio.usuario|default:'Usuario no disponible' }}</p>
+        {% empty %}
+            <p>No hay modificaciones manuales registradas.</p>
+        {% endfor %}
+    </section>
 {% endblock %}

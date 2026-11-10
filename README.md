@@ -23,14 +23,16 @@ Abrir http://127.0.0.1:8000/ e ingresar con el usuario creado. La base SQLite lo
 
 ## Flujo de trabajo
 
-1. Entrar a `/admin/` y crear las reglas de clasificación revisadas por la persona responsable del diccionario.
-2. Ir a **Importar Excel**, descargar la plantilla vacía y cargar registros.
-3. Revisar errores y conflictos en el resultado de la importación.
-4. Consultar pacientes e historial, o aplicar filtros desde **Indicadores**.
-5. Descargar el reporte Excel. En administración, actualizar `notificación ENO registrada` o `seguimiento GES vigente` de las consultas cuando corresponda.
-6. Después de modificar las reglas, ejecutar `python manage.py reclasificar` para actualizar consultas existentes. Las importaciones nuevas usan las reglas activas de inmediato.
+1. Iniciar sesión y entrar a **Enfermedades** para consultar el catálogo y crear las reglas acordadas con la responsable del diccionario. Cada regla guardada reclasifica el historial automáticamente.
+2. Entrar a **Importar planilla** para cargar Excel o CSV y revisar inconsistencias. La importación amplía el catálogo de enfermedades conocidas.
+3. Desde **Pacientes**, registrar personas, editar su ficha o agregar y corregir atenciones y enfermedades. Los cambios manuales quedan auditados.
+4. En **Indicadores**, filtrar por enfermedad, categoría, edad, sexo y previsión. La tabla identifica a cada paciente por nombre y RUT e informa su clasificación.
+5. Descargar el Excel con los filtros aplicados y la hoja **Pacientes filtrados**.
+6. Para retirar una carga, usar **Importar planilla → Eliminar última importación**, revisar el alcance y confirmar. Se borran sus consultas y pacientes exclusivos, conservando otros registros y restaurando los datos previos disponibles.
 
-La administración requiere un usuario con permisos de staff. Las pantallas y descargas requieren iniciar sesión. Para un funcionario sin acceso administrativo se puede crear un usuario activo desde Django Admin.
+Hay un [archivo de prueba con 50 pacientes de Los Ríos](outputs/los_rios_50/plantilla_pacientes_Los_Rios_50.xlsx): 20 de la plantilla Valdivia con una nueva atención y 30 nuevos. Todos tienen domicilio ficticio en Valdivia, Región de Los Ríos. La guía incluye el ciclo de carga, eliminación y recarga.
+
+Consultar [la guía de operación](docs/GUIA_DE_USO.md) para los procedimientos, decisiones de clasificación y actualización de una instalación existente. Todas estas funciones están disponibles para usuarios autenticados; no requieren ser staff ni entrar a Django Admin. La administración se conserva para tareas técnicas y actualización de estados de seguimiento.
 
 ## Estructura
 
@@ -55,7 +57,7 @@ Se admiten Excel `.xlsx` (primera hoja) y CSV, con encabezados dentro de las pri
 
 Nombre, RUT, edad, peso, sexo y previsión son obligatorios. Las columnas de antecedentes y signos vitales deben existir, pero su texto puede estar vacío. Edad admite enteros entre 0 y 130; peso, valores positivos con hasta dos decimales. Se extrae la fecha DD-MM-AAAA al inicio de Últimas consultas, o se usa una columna explícita opcional Fecha consulta con una fecha Excel o AAAA-MM-DD.
 
-Los campos adicionales se conservan en el historial. La condición declarada en la planilla se muestra separada de la clasificación automática. El límite de archivo sigue siendo 10 MB y 50.000 filas.
+Los campos adicionales se conservan en el historial. La condición declarada en la planilla se muestra separada de la clasificación automática. Las enfermedades declaradas se incorporan al catálogo sin asignarles una categoría por defecto. El límite de archivo sigue siendo 10 MB y 50.000 filas.
 
 Se preparó una [copia Excel con datos ficticios](outputs/plantilla_demo/plantilla_pacientes_ficticios.xlsx), con ajustes de coherencia documentados en [docs/PLANTILLA_DEMO.md](docs/PLANTILLA_DEMO.md). El CSV original se conservó y las comprobaciones no dejaron datos de demostración cargados en la base.
 
@@ -72,9 +74,9 @@ La interfaz usa Bootstrap 5.3.8 guardado en `static/vendor/bootstrap`, con naveg
 - No se cargan reglas clínicas de ejemplo en la base de uso. Sin reglas coincidentes se guarda SIN_ANTECEDENTES y la interfaz avisa si no hay diccionario activo. Esta categoría no certifica ausencia de enfermedad.
 - Las palabras clave ignoran tildes y mayúsculas y respetan límites de palabra. Las expresiones regulares ignoran mayúsculas y se aplican sobre el texto original. Las reglas se ordenan por prioridad ascendente e ID. La primera coincidencia determina la categoría y todas las coincidencias aportan enfermedades y trazabilidad.
 - El motor inicial no interpreta por sí solo negaciones, contexto familiar ni ambigüedad. El diccionario y sus resultados requieren aceptación de dominio; no se afirma cumplir el 95 % de acierto del informe.
-- Los indicadores se recalculan sobre los datos actuales. Los porcentajes usan pacientes distintos por grupo sobre la población filtrada. Una persona puede pertenecer a categorías distintas en consultas distintas, por lo que esos porcentajes pueden superponerse.
+- Los indicadores se recalculan sobre los datos actuales. Los filtros clínicos seleccionan atenciones que cumplen la enfermedad y la categoría en el mismo registro. Los porcentajes usan pacientes distintos por grupo sobre la población filtrada. Una persona puede pertenecer a categorías distintas en consultas distintas, por lo que esos porcentajes pueden superponerse.
 - ENO nuevas quedan pendientes de notificación; GES nuevas quedan vigentes. Sus estados se actualizan manualmente desde administración. No existe envío automático a organismos externos.
-- El reporte exportado contiene datos actuales en ocho hojas. El formato de entrada ya coincide con las columnas recibidas; el diseño de los reportes de salida aún requiere la referencia del hospital.
+- El reporte exportado contiene datos actuales en nueve hojas, incluida Pacientes filtrados. El formato de entrada ya coincide con las columnas recibidas; el diseño de los reportes de salida aún requiere la referencia del hospital.
 
 ## Verificación
 

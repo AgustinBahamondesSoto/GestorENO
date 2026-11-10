@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p class="etiqueta">DICCIONARIO DE CLASIFICACIÓN</p>
+    <h1>Enfermedades y reglas</h1>
+    <p>
+        Catálogo de enfermedades conocidas por el sistema. Puedes incorporar nuevos términos y definir sus reglas.
+        Las categorías se configuran por el equipo responsable del diccionario.
+    </p>
+    <div class="d-flex flex-wrap gap-3 mb-4">
+        <a class="btn btn-primary" href="{% url 'clasificacion:regla_nueva' %}">Crear regla</a>
+        <a class="btn btn-outline-secondary" href="{% url 'clasificacion:enfermedad_nueva' %}">Agregar enfermedad</a>
+        <form method="post" action="{% url 'clasificacion:reclasificar' %}">
+            {% csrf_token %}
+            <button class="btn btn-outline-secondary" type="submit">Actualizar clasificaciones</button>
+        </form>
+    </div>
+    <p>Las reglas se aplican al historial automáticamente al guardarlas. No necesitas usar la consola.</p>
+    <section class="card card-body p-4 my-4">
+        <h2>Listado de enfermedades</h2>
+        <form class="d-flex gap-2 mb-3" method="get">
+            <label class="visually-hidden" for="q">Buscar enfermedad</label>
+            <input class="form-control" id="q" name="q" value="{{ busqueda }}" placeholder="Buscar enfermedad">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+        </form>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Enfermedad</th>
+                        <th>Reglas y categorías configuradas</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for enfermedad in pagina %}
+                        <tr>
+                            <td>{{ enfermedad.nombre }}</td>
+                            <td>
+                                {% for regla in enfermedad.reglas %}
+                                    <div>
+                                        {{ regla.get_categoria_display }}
+                                        {% if not regla.activa %}(inactiva){% endif %}
+                                        <a href="{% url 'clasificacion:regla_editar' regla.pk %}">{{ regla.nombre }}</a>
+                                    </div>
+                                {% empty %}
+                                    Sin regla de clasificación
+                                {% endfor %}
+                            </td>
+                            <td>
+                                <a href="{% url 'clasificacion:regla_nueva' %}?enfermedad={{ enfermedad.pk }}">Crear regla</a>
+                            </td>
+                        </tr>
+                    {% empty %}
+                        <tr><td colspan="3">No hay enfermedades. Puedes agregarlas aquí o importar una planilla.</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% include 'paginacion.html' %}
+    </section>
+    <section class="card card-body p-4 my-4">
+        <h2>Reglas del motor</h2>
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Regla</th>
+                        <th>Enfermedad</th>
+                        <th>Categoría</th>
+                        <th>Prioridad</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for regla in reglas %}
+                        <tr>
+                            <td><a href="{% url 'clasificacion:regla_editar' regla.pk %}">{{ regla.nombre }}</a></td>
+                            <td>{{ regla.enfermedad }}</td>
+                            <td>{{ regla.get_categoria_display }}</td>
+                            <td>{{ regla.prioridad }}</td>
+                            <td>{{ regla.activa|yesno:'Activa,Inactiva' }}</td>
+                        </tr>
+                    {% empty %}
+                        <tr><td colspan="5">Todavía no hay reglas configuradas.</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
+{% endblock %}

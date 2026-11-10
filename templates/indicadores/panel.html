@@ -6,12 +6,16 @@
     <h1>
         Indicadores clínicos
     </h1>
+    <div class="d-flex flex-wrap gap-3 my-3">
+        <a class="btn btn-primary" href="{% url 'clasificacion:regla_nueva' %}">Crear regla de clasificación</a>
+        <a class="btn btn-outline-secondary" href="{% url 'clasificacion:catalogo' %}">Ver enfermedades y reglas</a>
+    </div>
     <p>
         Pacientes consolidados por RUT y consultas conservadas en su historial.
     </p>
     {% if not hay_reglas %}
         <aside class="alert alert-warning my-4" role="status">
-            No hay reglas clínicas activas. Un administrador debe configurar y validar el diccionario antes de interpretar la clasificación.
+            No hay reglas clínicas activas. Puedes crearlas desde Enfermedades y validar el diccionario antes de interpretar la clasificación.
         </aside>
     {% endif %}
     <section class="card card-body p-4 my-4">
@@ -57,8 +61,9 @@
             </div>
         </div>
         <p>
-            Los porcentajes usan como denominador la población filtrada. Se revisa todo su historial; una persona puede aparecer en varias categorías o enfermedades.
+            Los porcentajes usan como denominador los pacientes filtrados. Se consideran las atenciones que cumplen los filtros clínicos; una persona puede aparecer en varias categorías o enfermedades.
         </p>
+        {% include 'indicadores/resultados.html' %}
         <div class="row g-4">
             {% include 'indicadores/tabla.html' with titulo='Condición GES / ENO' filas=datos.categorias %}
             {% include 'indicadores/tabla.html' with titulo='Distribución por edad' filas=datos.edades %}

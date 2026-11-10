@@ -2,6 +2,7 @@ from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
 
 from .validators import normalizar_rut
+from django.conf import settings
 
 
 class Paciente(models.Model):
@@ -35,8 +36,9 @@ class Paciente(models.Model):
 
 class Consulta(models.Model):
     paciente = models.ForeignKey(Paciente, related_name='consultas', on_delete=models.PROTECT)
-    importacion = models.ForeignKey('importaciones.Importacion', related_name='consultas', on_delete=models.PROTECT)
-    fila = models.PositiveIntegerField()
+    importacion = models.ForeignKey('importaciones.Importacion', related_name='consultas', on_delete=models.PROTECT, null=True, blank=True)
+    fila = models.PositiveIntegerField(null=True, blank=True)
+    usuario = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, blank=True, on_delete=models.SET_NULL)
     huella = models.CharField(max_length=64, unique=True, editable=False)
     fecha = models.DateField(null=True, blank=True)
     registrada = models.DateTimeField(auto_now_add=True)
@@ -48,12 +50,13 @@ class Consulta(models.Model):
     destino = models.CharField('destino del paciente', max_length=200, blank=True)
     condicion_declarada = models.CharField('condición indicada en la planilla', max_length=100, blank=True)
     edad = models.PositiveSmallIntegerField(validators=[MaxValueValidator(130)])
-    peso = models.DecimalField(max_digits=6, decimal_places=2, validators=[MinValueValidator(0.01)])
+    peso = models.DecimalField(max_digits=6, decimal_places=2, validators=[MinValueValidator(0.01)], null=True, blank=True)
     sexo = models.CharField(max_length=30)
     prevision = models.CharField(max_length=100)
     antecedentes = models.TextField(blank=True)
     signos_vitales = models.TextField(blank=True)
-    clasificacion = models.CharField(max_length=20, choices=[('ENO', 'ENO'), ('GES_AUGE', 'GES/AUGE'), ('SIN_ANTECEDENTES', 'Sin antecedentes')], default='SIN_ANTECEDENTES')
+    clasificacion = models.CharField(max_length=20, choices=[('ENO', 'ENO'), ('GES_AUGE', 'GES/AUGE'), ('SIN_ANTECEDENTES', 'Sin coincidencias')], default='SIN_ANTECEDENTES')
+    enfermedades_registradas = models.ManyToManyField('clasificacion.Enfermedad', related_name='consultas', blank=True)
     enfermedades = models.JSONField(default=list, blank=True)
     reglas_aplicadas = models.JSONField(default=list, blank=True)
     eno_notificado = models.BooleanField('notificación ENO registrada', default=False)
@@ -64,5 +67,17 @@ class Consulta(models.Model):
 
     def __str__(self):
         return f'{self.paciente.rut} · consulta {self.pk}'
+
+
+class CambioPaciente(models.Model):
+    paciente = models.ForeignKey(Paciente, related_name='cambios', on_delete=models.PROTECT)
+    usuario = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)
+    fecha = models.DateTimeField(auto_now_add=True)
+    accion = models.CharField(max_length=40)
+    antes = models.JSONField(default=dict)
+    despues = models.JSONField(default=dict)
+
+    class Meta:
+        ordering = ['-fecha', '-pk']
 
 # Create your models here.

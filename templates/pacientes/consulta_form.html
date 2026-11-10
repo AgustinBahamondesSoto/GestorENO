@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p class="etiqueta">REGISTRO CLÍNICO</p>
+    <h1>{% if editando %}Corregir atención{% else %}Agregar enfermedad o atención{% endif %}</h1>
+    <p>{{ paciente.nombre_completo }} · {{ paciente.rut }}</p>
+    <p>
+        Selecciona las enfermedades de esta atención o escribe una nueva.
+        La clasificación se calcula al guardar con las reglas activas.
+    </p>
+    <p><a href="{% url 'clasificacion:catalogo' %}">Consultar enfermedades y reglas</a></p>
+    <section class="card card-body p-4 my-4">
+        <form method="post">
+            {% csrf_token %}
+            {% include 'formulario.html' %}
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+                <button class="btn btn-primary" type="submit">Guardar y clasificar</button>
+                <a href="{% url 'pacientes:detalle' paciente.pk %}">Cancelar</a>
+            </div>
+        </form>
+    </section>
+{% endblock %}

@@ -29,4 +29,14 @@ class Inconsistencia(models.Model):
     class Meta:
         ordering = ['fila', 'pk']
 
+
+class EstadoPacienteImportacion(models.Model):
+    importacion = models.ForeignKey(Importacion, related_name='estados_pacientes', on_delete=models.CASCADE)
+    paciente = models.ForeignKey('pacientes.Paciente', related_name='estados_importacion', on_delete=models.PROTECT)
+    antes = models.JSONField(default=dict)
+    despues = models.JSONField(default=dict)
+
+    class Meta:
+        constraints = [models.UniqueConstraint(fields=['importacion', 'paciente'], name='estado_unico_paciente_lote')]
+
 # Create your models here.

@@ -9,6 +9,12 @@
     <p>
         Las filas válidas se procesan aunque otras contengan errores.
     </p>
+    {% if ultima %}
+        <div class="d-flex flex-wrap gap-3 align-items-center my-3">
+            <a class="btn btn-outline-danger" href="{% url 'importaciones:eliminar' ultima.pk %}">Eliminar última importación</a>
+            <span class="text-secondary">{{ ultima.archivo }}</span>
+        </div>
+    {% endif %}
     <section class="card card-body p-4 my-4">
         <h2>
             Seleccionar archivo

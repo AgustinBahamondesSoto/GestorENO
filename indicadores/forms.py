@@ -1,5 +1,6 @@
 from django import forms
 from pacientes.models import Paciente
+from clasificacion.models import Enfermedad
 
 
 class FiltrosForm(forms.Form):
@@ -27,6 +28,10 @@ class FiltrosForm(forms.Form):
     sexo = forms.ChoiceField(label='Sexo', required=False)
     prevision = forms.ChoiceField(label='Previsión', required=False)
     categoria = forms.ChoiceField(label='Categoría', required=False, choices=[('', 'Todas'), ('ENO', 'ENO'), ('GES_AUGE', 'GES/AUGE'), ('SIN_ANTECEDENTES', 'Sin coincidencias')])
+    enfermedad = forms.ModelChoiceField(
+        label='Enfermedad', queryset=Enfermedad.objects.all(),
+        required=False, empty_label='Todas las enfermedades',
+    )
 
     def clean(self):
         datos = super().clean()

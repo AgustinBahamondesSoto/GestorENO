@@ -4,7 +4,9 @@
     </div>
 {% endif %}
 {% for field in form %}
-    <div class="{% if horizontal %}col-sm-6 col-lg-2{% else %}mb-3{% endif %}">
+<div
+    class="{% if horizontal %}{% if field.name == 'enfermedad' %}col-12{% else %}col-sm-6 col-lg-2{% endif %}{% else %}mb-3{% endif %}"
+>
         <label class="form-label" for="{{ field.id_for_label }}">
             {{ field.label }}
         </label>
