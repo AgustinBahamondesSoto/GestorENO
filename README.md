@@ -4,6 +4,8 @@ Aplicación Django para importar registros clínicos desde Excel, consolidar pac
 
 El backlog, criterios de aceptación y asuntos pendientes de validación están en [docs/PRODUCT_BACKLOG.md](docs/PRODUCT_BACKLOG.md).
 
+El [manual de usuario](docs/MANUAL_USUARIO.md) explica el acceso con MFA y la operación diaria. También está disponible en [Word](outputs/manual_usuario/Manual_Usuario_Gestor_ENO.docx), con ocho páginas de instrucciones para consulta.
+
 ## Ejecutar en Windows PowerShell
 
 El entorno `.venv` existente se conservó y se utilizó para crear el proyecto y las apps. Además de Django, se instaló `openpyxl` para manejar `.xlsx`.
