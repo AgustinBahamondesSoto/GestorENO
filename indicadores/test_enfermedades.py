@@ -1,3 +1,4 @@
+from gestor_eno.ayudas_tests import iniciar_sesion_verificada
 from io import BytesIO
 from django.contrib.auth import get_user_model
 from django.test import TestCase
@@ -14,7 +15,7 @@ from .services import calcular_indicadores, resultados_pacientes
 class FiltroEnfermedadesTests(TestCase):
     def setUp(self):
         self.usuario = get_user_model().objects.create_user(username='indicadores')
-        self.client.force_login(self.usuario)
+        iniciar_sesion_verificada(self.client, self.usuario)
         self.alfa = registrar_enfermedad('Condición ficticia alfa')
         self.beta = registrar_enfermedad('Condición ficticia beta')
         ReglaClasificacion.objects.create(nombre='Alfa', enfermedad=self.alfa.nombre, categoria='ENO', tipo='PALABRA', patron=self.alfa.nombre)

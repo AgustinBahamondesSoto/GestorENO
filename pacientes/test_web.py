@@ -1,3 +1,4 @@
+from gestor_eno.ayudas_tests import iniciar_sesion_verificada
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from importaciones.services import importar_excel
@@ -10,7 +11,7 @@ from .models import Paciente, Consulta, CambioPaciente
 class PacientesWebTests(TestCase):
     def setUp(self):
         self.usuario = get_user_model().objects.create_user(username='valeria_prueba')
-        self.client.force_login(self.usuario)
+        iniciar_sesion_verificada(self.client, self.usuario)
         self.datos = {
             'rut': '12.345.678-5', 'nombre': 'Persona', 'apellido': 'Ficticia',
             'edad': 30, 'sexo': 'F', 'prevision': 'Fonasa A',

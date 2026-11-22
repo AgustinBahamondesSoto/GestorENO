@@ -1,3 +1,4 @@
+from gestor_eno.ayudas_tests import iniciar_sesion_verificada
 from django.test import TestCase
 from importaciones.tests import planilla, FILA
 from importaciones.services import importar_excel
@@ -55,7 +56,7 @@ class FiltrosSeleccionTests(TestCase):
         self.assertEqual(list(form.fields['prevision'].choices), [('', 'Todas'), ('Fonasa A', 'Fonasa A'), ('Isapre', 'Isapre')])
 
     def test_seleccion_filtra_panel_y_excel_y_se_conserva(self):
-        self.client.force_login(self.usuario)
+        iniciar_sesion_verificada(self.client, self.usuario)
         filtros = {'sexo': 'F', 'prevision': 'Fonasa A'}
         respuesta = self.client.get('/', filtros)
         self.assertEqual(respuesta.context['datos']['total'], 2)

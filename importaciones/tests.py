@@ -85,6 +85,27 @@ class ImportacionTests(TestCase):
         self.assertEqual(lote.validas, 1)
         self.assertIsNone(Consulta.objects.get().fecha)
 
+    def test_sin_rut_informa_solo_columna_faltante(self):
+        cabecera = [
+            'Nombre',
+            'Edad',
+            'Peso',
+            'Sexo',
+            'Previsión',
+            'Antecedentes médicos',
+            'Signos vitales',
+        ]
+
+        with self.assertRaises(ErrorPlantilla) as error:
+            importar_excel(planilla([], cabecera), 'sin_rut.xlsx')
+
+        self.assertEqual(
+            str(error.exception),
+            'Faltan columnas obligatorias: rut',
+        )
+        self.assertFalse(Importacion.objects.exists())
+        self.assertFalse(Paciente.objects.exists())
+        self.assertFalse(Consulta.objects.exists())
 
 class PlantillaHospitalTests(TestCase):
     def csv_hospital(self, separador=',', codificacion='utf-8-sig', fila_mala=False):

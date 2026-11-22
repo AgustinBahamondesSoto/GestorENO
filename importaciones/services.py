@@ -139,18 +139,32 @@ def _procesar(libro, nombre, usuario, repositorio):
     hoja = libro.worksheets[0]
     return _procesar_filas(enumerate(hoja.iter_rows(values_only=True), start=1), nombre, usuario, repositorio)
 
+def detectar_cabecera(filas):
+    obligatorias = set(COLUMNAS)
+    mejores_titulos = []
+    mejor_numero = 0
+    mayor_coincidencia = 0
+
+    for numero, valores in filas:
+        candidatos = [encabezado(valor) for valor in valores]
+        coincidencias = len(obligatorias.intersection(candidatos))
+
+        if coincidencias > mayor_coincidencia:
+            mejores_titulos = candidatos
+            mejor_numero = numero
+            mayor_coincidencia = coincidencias
+
+        if obligatorias.issubset(candidatos):
+            return candidatos, numero
+
+        if numero >= 20:
+            break
+
+    return mejores_titulos, mejor_numero
 
 @transaction.atomic
 def _procesar_filas(filas, nombre, usuario, repositorio):
-    titulos = []
-    fila_cabecera = 0
-    for numero, valores in filas:
-        candidatos = [encabezado(c) for c in valores]
-        if 'rut' in candidatos and 'nombre' in candidatos:
-            titulos, fila_cabecera = candidatos, numero
-            break
-        if numero >= 20:
-            break
+    titulos, fila_cabecera = detectar_cabecera(filas)
     faltantes = set(COLUMNAS) - set(titulos)
     if faltantes:
         raise ErrorPlantilla('Faltan columnas obligatorias: ' + ', '.join(sorted(faltantes)))

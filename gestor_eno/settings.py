@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 from pathlib import Path
 import os
 import secrets
+from django.core.exceptions import ImproperlyConfigured
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -22,7 +23,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY') or secrets.token_urlsafe(50)
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+
+if not SECRET_KEY:
+    try:
+        SECRET_KEY = (
+            BASE_DIR / '.env.secret_django'
+        ).read_text(encoding='utf-8').strip()
+    except OSError as exc:
+        raise ImproperlyConfigured(
+            'Falta la clave estable de Django.'
+        ) from exc
+
+if len(SECRET_KEY) < 50:
+    raise ImproperlyConfigured(
+        'La clave de Django debe tener al menos 50 caracteres.'
+    )
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '1') == '1'
@@ -44,6 +60,10 @@ INSTALLED_APPS = [
     'clasificacion',
     'indicadores',
     'reportes',
+    'django_otp',
+    'django_otp.plugins.otp_static',
+    'django_otp.plugins.otp_totp',
+    'two_factor',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +72,8 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django_otp.middleware.OTPMiddleware',
+    'gestor_eno.middleware.MFAObligatoriaMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
@@ -123,9 +145,12 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
-LOGIN_URL = 'login'
+LOGIN_URL = 'two_factor:login'
 LOGIN_REDIRECT_URL = 'indicadores:panel'
-LOGOUT_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL = 'two_factor:login'
+
+OTP_TOTP_ISSUER = 'Gestor ENO'
+TWO_FACTOR_REMEMBER_COOKIE_AGE = None
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 FILE_UPLOAD_MAX_MEMORY_SIZE = 5 * 1024 * 1024
 

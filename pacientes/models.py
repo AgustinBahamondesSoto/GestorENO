@@ -1,6 +1,6 @@
 from django.db import models
 from django.core.validators import MaxValueValidator, MinValueValidator
-
+from .campos import TextoCifrado, JSONCifrado
 from .validators import normalizar_rut
 from django.conf import settings
 
@@ -45,16 +45,16 @@ class Consulta(models.Model):
     nombre = models.CharField(max_length=200)
     apellido = models.CharField(max_length=200, blank=True)
     domicilio_comuna = models.CharField('domicilio y comuna', max_length=300, blank=True)
-    enfermedades_declaradas = models.TextField('enfermedades crónicas o complicaciones de la planilla', blank=True)
-    ultimas_consultas = models.TextField('últimas consultas de la planilla', blank=True)
+    enfermedades_declaradas = TextoCifrado('enfermedades crónicas o complicaciones de la planilla', blank=True,)
+    ultimas_consultas = TextoCifrado('últimas consultas de la planilla', blank=True,)
     destino = models.CharField('destino del paciente', max_length=200, blank=True)
     condicion_declarada = models.CharField('condición indicada en la planilla', max_length=100, blank=True)
     edad = models.PositiveSmallIntegerField(validators=[MaxValueValidator(130)])
     peso = models.DecimalField(max_digits=6, decimal_places=2, validators=[MinValueValidator(0.01)], null=True, blank=True)
     sexo = models.CharField(max_length=30)
     prevision = models.CharField(max_length=100)
-    antecedentes = models.TextField(blank=True)
-    signos_vitales = models.TextField(blank=True)
+    antecedentes = TextoCifrado(blank=True)
+    signos_vitales = TextoCifrado(blank=True)
     clasificacion = models.CharField(max_length=20, choices=[('ENO', 'ENO'), ('GES_AUGE', 'GES/AUGE'), ('SIN_ANTECEDENTES', 'Sin coincidencias')], default='SIN_ANTECEDENTES')
     enfermedades_registradas = models.ManyToManyField('clasificacion.Enfermedad', related_name='consultas', blank=True)
     enfermedades = models.JSONField(default=list, blank=True)
@@ -74,10 +74,9 @@ class CambioPaciente(models.Model):
     usuario = models.ForeignKey(settings.AUTH_USER_MODEL, null=True, on_delete=models.SET_NULL)
     fecha = models.DateTimeField(auto_now_add=True)
     accion = models.CharField(max_length=40)
-    antes = models.JSONField(default=dict)
-    despues = models.JSONField(default=dict)
+    antes = JSONCifrado(default=dict)
+    despues = JSONCifrado(default=dict)
 
     class Meta:
         ordering = ['-fecha', '-pk']
 
-# Create your models here.

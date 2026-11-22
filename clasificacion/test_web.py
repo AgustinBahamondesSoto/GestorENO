@@ -1,3 +1,4 @@
+from gestor_eno.ayudas_tests import iniciar_sesion_verificada
 from django.contrib.auth import get_user_model
 from django.test import TestCase, Client
 from importaciones.services import importar_excel
@@ -10,7 +11,7 @@ from .models import Enfermedad, ReglaClasificacion
 class ReglasWebTests(TestCase):
     def setUp(self):
         self.usuario = get_user_model().objects.create_user(username='funcionaria')
-        self.client.force_login(self.usuario)
+        iniciar_sesion_verificada(self.client, self.usuario)
         fila = [*FILA]
         fila[6] = 'Condición de prueba alfa'
         importar_excel(planilla([fila]), 'demo.xlsx')
@@ -59,7 +60,7 @@ class ReglasWebTests(TestCase):
     def test_actualizacion_solo_post_autenticado_y_csrf(self):
         self.assertEqual(self.client.get('/clasificacion/reclasificar/').status_code, 405)
         cliente = Client(enforce_csrf_checks=True)
-        cliente.force_login(self.usuario)
+        iniciar_sesion_verificada(cliente, self.usuario)
         self.assertEqual(cliente.post('/clasificacion/reclasificar/').status_code, 403)
         self.client.logout()
         for ruta in ['/clasificacion/', '/clasificacion/reglas/nueva/', '/clasificacion/enfermedades/nueva/']:

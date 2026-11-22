@@ -12,6 +12,7 @@ El entorno `.venv` existente se conservó y se utilizó para crear el proyecto y
 cd GestorENO
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
+python scripts/preparar_claves.py
 python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
@@ -20,6 +21,22 @@ python manage.py runserver
 Si PowerShell impide activar el entorno, utiliza directamente `.\.venv\Scripts\python.exe` en lugar de `python`.
 
 Abrir http://127.0.0.1:8000/ e ingresar con el usuario creado. La base SQLite local ya tiene las migraciones aplicadas. No se creó una cuenta con contraseña predeterminada.
+
+El primer acceso exige configurar una aplicación autenticadora; después se ingresa con contraseña y código TOTP. Cada instalación utiliza sus propios archivos locales `.env.clave_cifrado` y `.env.secret_django`, excluidos de Git. El script conserva las claves existentes. Guardar una copia protegida de la clave de cifrado: es necesaria para recuperar los campos clínicos y los respaldos cifrados.
+
+## Actualizar una instalación existente
+
+Detener el servidor y respaldar su base antes de aplicar cambios. Actualizar el código y ejecutar los comandos siguientes con el entorno virtual de esa instalación:
+
+```powershell
+python -m pip install -r requirements.txt
+python scripts/preparar_claves.py
+python manage.py migrate
+python manage.py check
+python manage.py test --verbosity 1
+```
+
+La migración `pacientes.0005_cifrado_clinico` cifra cuatro campos de las consultas y el antes/después del historial, conservando los registros existentes. Las migraciones de OTP incorporan las tablas de autenticación multifactor. No se debe reemplazar la base de una instalación con la de testing ni generar otra clave para una base ya cifrada. El código y las migraciones se comparten mediante Git; bases, claves y entornos virtuales se mantienen por instalación.
 
 ## Flujo de trabajo
 

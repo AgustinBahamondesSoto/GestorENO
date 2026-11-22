@@ -1,3 +1,4 @@
+from gestor_eno.ayudas_tests import iniciar_sesion_verificada
 from unittest.mock import patch
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
@@ -14,7 +15,7 @@ from .tests import FILA, planilla
 class EliminacionImportacionTests(TestCase):
     def setUp(self):
         self.usuario = get_user_model().objects.create_user(username='eliminacion')
-        self.client.force_login(self.usuario)
+        iniciar_sesion_verificada(self.client, self.usuario)
 
     def cargar(self, filas, nombre='prueba.xlsx'):
         return importar_excel(planilla(filas), nombre, self.usuario)
@@ -119,7 +120,7 @@ class EliminacionImportacionTests(TestCase):
         lote = self.cargar([FILA])
         ruta = f'/importaciones/{lote.pk}/eliminar/'
         cliente = Client(enforce_csrf_checks=True)
-        cliente.force_login(self.usuario)
+        iniciar_sesion_verificada(cliente, self.usuario)
         self.assertEqual(cliente.post(ruta, {'confirmar': 'si'}).status_code, 403)
         self.client.logout()
         self.assertEqual(self.client.post(ruta, {'confirmar': 'si'}).status_code, 302)

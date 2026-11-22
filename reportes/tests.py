@@ -1,3 +1,5 @@
+from django.urls import reverse
+from gestor_eno.ayudas_tests import iniciar_sesion_verificada
 from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.core.files.uploadedfile import SimpleUploadedFile
@@ -49,7 +51,7 @@ class FlujoWebTests(TestCase):
                 self.assertEqual(self.client.get(ruta).status_code, 302)
 
     def test_carga_historial_indicadores_exportacion(self):
-        self.client.force_login(self.usuario)
+        iniciar_sesion_verificada(self.client, self.usuario)
         archivo = SimpleUploadedFile('prueba.xlsx', planilla([FILA]).getvalue())
         respuesta = self.client.post('/importaciones/', {'archivo': archivo})
         self.assertEqual(respuesta.status_code, 302)
@@ -60,14 +62,15 @@ class FlujoWebTests(TestCase):
         self.assertEqual(self.client.get('/reportes/excel/?edad_min=50&edad_max=20').status_code, 400)
 
     def test_login_y_filtros_invalidos(self):
-        self.assertContains(self.client.get('/cuentas/entrar/'), 'Iniciar sesión')
-        self.client.force_login(self.usuario)
+        self.assertRedirects(self.client.get('/cuentas/entrar/'), reverse('two_factor:login'))
+        self.assertContains(self.client.get(reverse('two_factor:login')), 'auth-username')
+        iniciar_sesion_verificada(self.client, self.usuario)
         self.assertContains(self.client.get('/?edad_min=50&edad_max=20'), 'La edad mínima no puede superar la máxima.')
 
     def test_csrf_en_carga(self):
         from django.test import Client
         cliente = Client(enforce_csrf_checks=True)
-        cliente.force_login(self.usuario)
+        iniciar_sesion_verificada(cliente, self.usuario)
         self.assertEqual(cliente.post('/importaciones/', {}).status_code, 403)
 
 # Create your tests here.

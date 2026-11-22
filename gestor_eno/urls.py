@@ -1,27 +1,26 @@
-"""
-URL configuration for gestor_eno project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/6.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import include, path
-from .forms import AccesoForm
+from django.views.generic import RedirectView
+from two_factor.admin import AdminSiteOTPRequired
+from two_factor.urls import urlpatterns as rutas_mfa
+
+
+# Conserva las inscripciones existentes del administrador y exige OTP.
+admin.site.__class__ = AdminSiteOTPRequired
 
 urlpatterns = [
+    path('', include(rutas_mfa)),
     path('admin/', admin.site.urls),
-    path('cuentas/entrar/', auth_views.LoginView.as_view(authentication_form=AccesoForm), name='login'),
+    # La dirección antigua solo redirige. Ya no autentica con contraseña sola.
+    path(
+        'cuentas/entrar/',
+        RedirectView.as_view(
+            pattern_name='two_factor:login',
+            query_string=True,
+        ),
+        name='login',
+    ),
     path('cuentas/salir/', auth_views.LogoutView.as_view(), name='logout'),
     path('', include('indicadores.urls')),
     path('pacientes/', include('pacientes.urls')),
